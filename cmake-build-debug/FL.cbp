@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="FL"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\tests\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/lzc/backup/FL/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/lzc/backup/FL/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/lzc/backup/FL/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exampleThread">
+				<Option output="/lzc/backup/FL/cmake-build-debug/build/exampleThread" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="../build/"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 exampleThread"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exampleThread/fast">
+				<Option output="/lzc/backup/FL/cmake-build-debug/build/exampleThread" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="../build/"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 exampleThread/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exampleScheduler">
+				<Option output="/lzc/backup/FL/cmake-build-debug/build/exampleScheduler" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="../build/"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 exampleScheduler"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exampleScheduler/fast">
+				<Option output="/lzc/backup/FL/cmake-build-debug/build/exampleScheduler" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="../build/"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 exampleScheduler/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exampleLog">
+				<Option output="/lzc/backup/FL/cmake-build-debug/build/exampleLog" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="../build/"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 exampleLog"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exampleLog/fast">
+				<Option output="/lzc/backup/FL/cmake-build-debug/build/exampleLog" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="../build/"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 exampleLog/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exampleCoroutine">
+				<Option output="/lzc/backup/FL/cmake-build-debug/build/exampleCoroutine" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="../build/"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 exampleCoroutine"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exampleCoroutine/fast">
+				<Option output="/lzc/backup/FL/cmake-build-debug/build/exampleCoroutine" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="../build/"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 exampleCoroutine/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/lzc/backup/FL/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/lzc/backup/FL/src/FL/config.cpp">
+			<Option target="exampleThread"/>
+			<Option target="exampleScheduler"/>
+			<Option target="exampleLog"/>
+			<Option target="exampleCoroutine"/>
+		</Unit>
+		<Unit filename="/lzc/backup/FL/src/FL/config.h">
+			<Option target="exampleThread"/>
+			<Option target="exampleScheduler"/>
+			<Option target="exampleLog"/>
+			<Option target="exampleCoroutine"/>
+		</Unit>
+		<Unit filename="/lzc/backup/FL/src/FL/coroutine.cpp">
+			<Option target="exampleThread"/>
+			<Option target="exampleScheduler"/>
+			<Option target="exampleLog"/>
+			<Option target="exampleCoroutine"/>
+		</Unit>
+		<Unit filename="/lzc/backup/FL/src/FL/coroutine.h">
+			<Option target="exampleThread"/>
+			<Option target="exampleScheduler"/>
+			<Option target="exampleLog"/>
+			<Option target="exampleCoroutine"/>
+		</Unit>
+		<Unit filename="/lzc/backup/FL/src/FL/log.cpp">
+			<Option target="exampleThread"/>
+			<Option target="exampleScheduler"/>
+			<Option target="exampleLog"/>
+			<Option target="exampleCoroutine"/>
+		</Unit>
+		<Unit filename="/lzc/backup/FL/src/FL/log.h">
+			<Option target="exampleThread"/>
+			<Option target="exampleScheduler"/>
+			<Option target="exampleLog"/>
+			<Option target="exampleCoroutine"/>
+		</Unit>
+		<Unit filename="/lzc/backup/FL/src/FL/logManager.cpp">
+			<Option target="exampleThread"/>
+			<Option target="exampleScheduler"/>
+			<Option target="exampleLog"/>
+			<Option target="exampleCoroutine"/>
+		</Unit>
+		<Unit filename="/lzc/backup/FL/src/FL/logManager.h">
+			<Option target="exampleThread"/>
+			<Option target="exampleScheduler"/>
+			<Option target="exampleLog"/>
+			<Option target="exampleCoroutine"/>
+		</Unit>
+		<Unit filename="/lzc/backup/FL/src/FL/mutex.cpp">
+			<Option target="exampleThread"/>
+			<Option target="exampleScheduler"/>
+			<Option target="exampleLog"/>
+			<Option target="exampleCoroutine"/>
+		</Unit>
+		<Unit filename="/lzc/backup/FL/src/FL/mutex.h">
+			<Option target="exampleThread"/>
+			<Option target="exampleScheduler"/>
+			<Option target="exampleLog"/>
+			<Option target="exampleCoroutine"/>
+		</Unit>
+		<Unit filename="/lzc/backup/FL/src/FL/scheduler.cpp">
+			<Option target="exampleThread"/>
+			<Option target="exampleScheduler"/>
+			<Option target="exampleLog"/>
+			<Option target="exampleCoroutine"/>
+		</Unit>
+		<Unit filename="/lzc/backup/FL/src/FL/scheduler.h">
+			<Option target="exampleThread"/>
+			<Option target="exampleScheduler"/>
+			<Option target="exampleLog"/>
+			<Option target="exampleCoroutine"/>
+		</Unit>
+		<Unit filename="/lzc/backup/FL/src/FL/thread.cpp">
+			<Option target="exampleThread"/>
+			<Option target="exampleScheduler"/>
+			<Option target="exampleLog"/>
+			<Option target="exampleCoroutine"/>
+		</Unit>
+		<Unit filename="/lzc/backup/FL/src/FL/thread.h">
+			<Option target="exampleThread"/>
+			<Option target="exampleScheduler"/>
+			<Option target="exampleLog"/>
+			<Option target="exampleCoroutine"/>
+		</Unit>
+		<Unit filename="/lzc/backup/FL/src/FL/util.cpp">
+			<Option target="exampleThread"/>
+			<Option target="exampleScheduler"/>
+			<Option target="exampleLog"/>
+			<Option target="exampleCoroutine"/>
+		</Unit>
+		<Unit filename="/lzc/backup/FL/src/FL/util.h">
+			<Option target="exampleThread"/>
+			<Option target="exampleScheduler"/>
+			<Option target="exampleLog"/>
+			<Option target="exampleCoroutine"/>
+		</Unit>
+		<Unit filename="/lzc/backup/FL/tests/exampleCoroutine.cpp">
+			<Option target="exampleCoroutine"/>
+		</Unit>
+		<Unit filename="/lzc/backup/FL/tests/exampleLog.cpp">
+			<Option target="exampleLog"/>
+		</Unit>
+		<Unit filename="/lzc/backup/FL/tests/exampleScheduler.cpp">
+			<Option target="exampleScheduler"/>
+		</Unit>
+		<Unit filename="/lzc/backup/FL/tests/exampleThread.cpp">
+			<Option target="exampleThread"/>
+		</Unit>
+		<Unit filename="/lzc/backup/FL/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/lzc/backup/FL/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\tests\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,182 @@
+[
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleScheduler.dir/exampleScheduler.cpp.o -c /lzc/backup/FL/tests/exampleScheduler.cpp",
+  "file": "/lzc/backup/FL/tests/exampleScheduler.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleScheduler.dir/__/src/FL/logManager.cpp.o -c /lzc/backup/FL/src/FL/logManager.cpp",
+  "file": "/lzc/backup/FL/src/FL/logManager.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleScheduler.dir/__/src/FL/log.cpp.o -c /lzc/backup/FL/src/FL/log.cpp",
+  "file": "/lzc/backup/FL/src/FL/log.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleScheduler.dir/__/src/FL/util.cpp.o -c /lzc/backup/FL/src/FL/util.cpp",
+  "file": "/lzc/backup/FL/src/FL/util.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleScheduler.dir/__/src/FL/config.cpp.o -c /lzc/backup/FL/src/FL/config.cpp",
+  "file": "/lzc/backup/FL/src/FL/config.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleScheduler.dir/__/src/FL/thread.cpp.o -c /lzc/backup/FL/src/FL/thread.cpp",
+  "file": "/lzc/backup/FL/src/FL/thread.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleScheduler.dir/__/src/FL/mutex.cpp.o -c /lzc/backup/FL/src/FL/mutex.cpp",
+  "file": "/lzc/backup/FL/src/FL/mutex.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleScheduler.dir/__/src/FL/coroutine.cpp.o -c /lzc/backup/FL/src/FL/coroutine.cpp",
+  "file": "/lzc/backup/FL/src/FL/coroutine.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleScheduler.dir/__/src/FL/scheduler.cpp.o -c /lzc/backup/FL/src/FL/scheduler.cpp",
+  "file": "/lzc/backup/FL/src/FL/scheduler.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleCoroutine.dir/exampleCoroutine.cpp.o -c /lzc/backup/FL/tests/exampleCoroutine.cpp",
+  "file": "/lzc/backup/FL/tests/exampleCoroutine.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleCoroutine.dir/__/src/FL/logManager.cpp.o -c /lzc/backup/FL/src/FL/logManager.cpp",
+  "file": "/lzc/backup/FL/src/FL/logManager.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleCoroutine.dir/__/src/FL/log.cpp.o -c /lzc/backup/FL/src/FL/log.cpp",
+  "file": "/lzc/backup/FL/src/FL/log.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleCoroutine.dir/__/src/FL/util.cpp.o -c /lzc/backup/FL/src/FL/util.cpp",
+  "file": "/lzc/backup/FL/src/FL/util.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleCoroutine.dir/__/src/FL/config.cpp.o -c /lzc/backup/FL/src/FL/config.cpp",
+  "file": "/lzc/backup/FL/src/FL/config.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleCoroutine.dir/__/src/FL/thread.cpp.o -c /lzc/backup/FL/src/FL/thread.cpp",
+  "file": "/lzc/backup/FL/src/FL/thread.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleCoroutine.dir/__/src/FL/mutex.cpp.o -c /lzc/backup/FL/src/FL/mutex.cpp",
+  "file": "/lzc/backup/FL/src/FL/mutex.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleCoroutine.dir/__/src/FL/coroutine.cpp.o -c /lzc/backup/FL/src/FL/coroutine.cpp",
+  "file": "/lzc/backup/FL/src/FL/coroutine.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleCoroutine.dir/__/src/FL/scheduler.cpp.o -c /lzc/backup/FL/src/FL/scheduler.cpp",
+  "file": "/lzc/backup/FL/src/FL/scheduler.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleLog.dir/exampleLog.cpp.o -c /lzc/backup/FL/tests/exampleLog.cpp",
+  "file": "/lzc/backup/FL/tests/exampleLog.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleLog.dir/__/src/FL/logManager.cpp.o -c /lzc/backup/FL/src/FL/logManager.cpp",
+  "file": "/lzc/backup/FL/src/FL/logManager.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleLog.dir/__/src/FL/log.cpp.o -c /lzc/backup/FL/src/FL/log.cpp",
+  "file": "/lzc/backup/FL/src/FL/log.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleLog.dir/__/src/FL/util.cpp.o -c /lzc/backup/FL/src/FL/util.cpp",
+  "file": "/lzc/backup/FL/src/FL/util.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleLog.dir/__/src/FL/config.cpp.o -c /lzc/backup/FL/src/FL/config.cpp",
+  "file": "/lzc/backup/FL/src/FL/config.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleLog.dir/__/src/FL/thread.cpp.o -c /lzc/backup/FL/src/FL/thread.cpp",
+  "file": "/lzc/backup/FL/src/FL/thread.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleLog.dir/__/src/FL/mutex.cpp.o -c /lzc/backup/FL/src/FL/mutex.cpp",
+  "file": "/lzc/backup/FL/src/FL/mutex.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleLog.dir/__/src/FL/coroutine.cpp.o -c /lzc/backup/FL/src/FL/coroutine.cpp",
+  "file": "/lzc/backup/FL/src/FL/coroutine.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleLog.dir/__/src/FL/scheduler.cpp.o -c /lzc/backup/FL/src/FL/scheduler.cpp",
+  "file": "/lzc/backup/FL/src/FL/scheduler.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleThread.dir/exampleThread.cpp.o -c /lzc/backup/FL/tests/exampleThread.cpp",
+  "file": "/lzc/backup/FL/tests/exampleThread.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleThread.dir/__/src/FL/logManager.cpp.o -c /lzc/backup/FL/src/FL/logManager.cpp",
+  "file": "/lzc/backup/FL/src/FL/logManager.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleThread.dir/__/src/FL/log.cpp.o -c /lzc/backup/FL/src/FL/log.cpp",
+  "file": "/lzc/backup/FL/src/FL/log.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleThread.dir/__/src/FL/util.cpp.o -c /lzc/backup/FL/src/FL/util.cpp",
+  "file": "/lzc/backup/FL/src/FL/util.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleThread.dir/__/src/FL/config.cpp.o -c /lzc/backup/FL/src/FL/config.cpp",
+  "file": "/lzc/backup/FL/src/FL/config.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleThread.dir/__/src/FL/thread.cpp.o -c /lzc/backup/FL/src/FL/thread.cpp",
+  "file": "/lzc/backup/FL/src/FL/thread.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleThread.dir/__/src/FL/mutex.cpp.o -c /lzc/backup/FL/src/FL/mutex.cpp",
+  "file": "/lzc/backup/FL/src/FL/mutex.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleThread.dir/__/src/FL/coroutine.cpp.o -c /lzc/backup/FL/src/FL/coroutine.cpp",
+  "file": "/lzc/backup/FL/src/FL/coroutine.cpp"
+},
+{
+  "directory": "/lzc/backup/FL/build/tests",
+  "command": "/bin/g++-8    -g   -o CMakeFiles/exampleThread.dir/__/src/FL/scheduler.cpp.o -c /lzc/backup/FL/src/FL/scheduler.cpp",
+  "file": "/lzc/backup/FL/src/FL/scheduler.cpp"
+}
+]

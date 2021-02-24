@@ -1,0 +1,30 @@
+[2021-02-23 15:59:35]	29264	 0	3	[ERROR]	[system]	[/lzc/backup/FL/src/FL/coroutine.cpp:194:MainFunc]	Fiber Except: path too long fiber_id=3
+../build/exampleTcpserver(_ZN2FL9Coroutine8MainFuncEv+0xbb3) [0x59c101]
+/lib/x86_64-linux-gnu/libc.so.6(+0x4cb50) [0x7f2dd76dfb50]
+
+[2021-02-23 15:59:39]	29270	 0	3	[ERROR]	[system]	[/lzc/backup/FL/src/FL/coroutine.cpp:194:MainFunc]	Fiber Except: path too long fiber_id=3
+../build/exampleTcpserver(_ZN2FL9Coroutine8MainFuncEv+0xbb3) [0x59c101]
+/lib/x86_64-linux-gnu/libc.so.6(+0x4cb50) [0x7f88add71b50]
+
+[2021-02-23 15:59:49]	29276	 0	3	[ERROR]	[system]	[/lzc/backup/FL/src/FL/coroutine.cpp:194:MainFunc]	Fiber Except: path too long fiber_id=3
+../build/exampleTcpserver(_ZN2FL9Coroutine8MainFuncEv+0xbb3) [0x59c101]
+/lib/x86_64-linux-gnu/libc.so.6(+0x4cb50) [0x7ff9a16e7b50]
+
+[2021-02-23 16:03:09]	29471	 0	3	[ERROR]	[system]	[/lzc/backup/FL/src/FL/coroutine.cpp:194:MainFunc]	Fiber Except: path too long fiber_id=3
+../build/exampleTcpserver(_ZN2FL9Coroutine8MainFuncEv+0xbb3) [0x59c101]
+/lib/x86_64-linux-gnu/libc.so.6(+0x4cb50) [0x7f36862b9b50]
+
+[2021-02-23 16:19:28]	30339	 0	4	[ERROR]	[system]	[/lzc/backup/FL/src/FL/coroutine.cpp:194:MainFunc]	Coroutine Except: path too long coroutine_id=4
+../build/exampleTcpserver(_ZN2FL9Coroutine8MainFuncEv+0xbb3) [0x59c101]
+/lib/x86_64-linux-gnu/libc.so.6(+0x4cb50) [0x7f0532368b50]
+
+[2021-02-23 16:21:13]	30867	 0	4	[ERROR]	[system]	[/lzc/backup/FL/src/FL/coroutine.cpp:194:MainFunc]	Coroutine Except: path too long coroutine_id=4
+../build/exampleTcpserver(_ZN2FL9Coroutine8MainFuncEv+0xbb3) [0x59c101]
+/lib/x86_64-linux-gnu/libc.so.6(+0x4cb50) [0x7f215c2cbb50]
+
+[2021-02-23 16:26:38]	31740	unknow	4	[ERROR]	[system]	[/lzc/backup/FL/src/FL/socket.cpp:149:bind]	bind error errno = 13strerr = Permission denied
+[2021-02-23 16:26:38]	31740	unknow	4	[ERROR]	[system]	[/lzc/backup/FL/src/FL/tcp_server.cpp:32:bind]	bind failed errno = 13 error info = Permission denied address = [0.0.0.0:80]
+[2021-02-23 16:26:43]	31756	unknow	4	[ERROR]	[system]	[/lzc/backup/FL/src/FL/socket.cpp:149:bind]	bind error errno = 13strerr = Permission denied
+[2021-02-23 16:26:43]	31756	unknow	4	[ERROR]	[system]	[/lzc/backup/FL/src/FL/tcp_server.cpp:32:bind]	bind failed errno = 13 error info = Permission denied address = [0.0.0.0:80]
+[2021-02-23 16:30:10]	32211	unknow	4	[ERROR]	[system]	[/lzc/backup/FL/src/FL/socket.cpp:361:getLocalAddress]	getpeername error sock = 7 errno = 107 errstr = Transport endpoint is not connected
+[2021-02-23 16:30:20]	32238	unknow	4	[ERROR]	[system]	[/lzc/backup/FL/src/FL/socket.cpp:361:getLocalAddress]	getpeername error sock = 7 errno = 107 errstr = Transport endpoint is not connected
