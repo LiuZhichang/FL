@@ -91,6 +91,21 @@ CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.o: /
 CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.o: /lzc/backup/FL/src/FL/http/http11_parser.cpp
 CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.o: /lzc/backup/FL/src/FL/http/http11_parser.h
 
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/ScopeGuard.hpp
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/address.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/bytearray.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/http/http.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/http/http11_common.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/http/http11_parser.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/http/http_connection.cpp
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/http/http_connection.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/http/http_parser.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/http/httpclient_parser.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/noncopyable.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/socket.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/socket_stream.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/stream.h
+
 CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o: /lzc/backup/FL/src/FL/config.h
 CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o: /lzc/backup/FL/src/FL/http/http.h
 CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o: /lzc/backup/FL/src/FL/http/http11_common.h
@@ -104,6 +119,46 @@ CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o: /lz
 CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o: /lzc/backup/FL/src/FL/noncopyable.h
 CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o: /lzc/backup/FL/src/FL/singleton.h
 CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o: /lzc/backup/FL/src/FL/util.h
+
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/address.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/bytearray.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/coroutine.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/http/http.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/http/http_server.cpp
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/http/http_server.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/http/http_servlet.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/http/http_session.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/iomanager.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/log.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/logmanager.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/mutex.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/noncopyable.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/scheduler.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/singleton.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/socket.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/socket_stream.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/stream.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/tcp_server.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/thread.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/timer.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/util.h
+
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/address.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/bytearray.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/http/http.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/http/http_servlet.cpp
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/http/http_servlet.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/http/http_session.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/http/resource/rsp_page.hpp
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/log.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/logmanager.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/mutex.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/noncopyable.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/singleton.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/socket.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/socket_stream.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/stream.h
+CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/util.h
 
 CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o: /lzc/backup/FL/src/FL/ScopeGuard.hpp
 CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o: /lzc/backup/FL/src/FL/address.h

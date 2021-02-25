@@ -368,12 +368,12 @@ class HttpResponse {
     void delHeader(const std::string& key);
 
     template <class T>
-    bool checkGetHaderAs(const std::string& key, T& val, const T& def = T()) {
+    bool checkGetHaderAs(const std::string& key, const T& def = T()) {
         return checkGetAs(m_headers, key, def);
     }
 
     template <class T>
-    T getHaderAs(const std::string& key, T& val, const T& def = T()) {
+    T getHaderAs(const std::string& key, const T& def = T()) {
         return getAs(m_headers, key, def);
     }
 
@@ -390,8 +390,8 @@ class HttpResponse {
     Map_t		m_headers;
 };
 
-std::ostream& operator << (std::ostream& os,const HttpRequest& req);
-std::ostream& operator << (std::ostream& os,const HttpResponse& rsp);
+std::ostream& operator << (std::ostream& os, const HttpRequest& req);
+std::ostream& operator << (std::ostream& os, const HttpResponse& rsp);
 
 }
 }

@@ -43,6 +43,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/exampleHttpconnection.dir/DependInfo.cmake"
+  "CMakeFiles/exampleHttpserver.dir/DependInfo.cmake"
   "CMakeFiles/exampleLog.dir/DependInfo.cmake"
   "CMakeFiles/exampleThread.dir/DependInfo.cmake"
   "CMakeFiles/exampleCoroutine2.dir/DependInfo.cmake"

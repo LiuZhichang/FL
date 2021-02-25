@@ -356,6 +356,45 @@ CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_session.cpp.s: cmake
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_session.cpp.s"
 	/usr/local/share/gcc-10.2/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /lzc/backup/FL/src/FL/http/http_session.cpp -o CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_session.cpp.s
 
+CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: CMakeFiles/exampleSocket.dir/flags.make
+CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/http/http_server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/lzc/backup/FL/tests/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o"
+	/usr/local/share/gcc-10.2/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o -c /lzc/backup/FL/src/FL/http/http_server.cpp
+
+CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_server.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_server.cpp.i"
+	/usr/local/share/gcc-10.2/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /lzc/backup/FL/src/FL/http/http_server.cpp > CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_server.cpp.i
+
+CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_server.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_server.cpp.s"
+	/usr/local/share/gcc-10.2/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /lzc/backup/FL/src/FL/http/http_server.cpp -o CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_server.cpp.s
+
+CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: CMakeFiles/exampleSocket.dir/flags.make
+CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/http/http_servlet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/lzc/backup/FL/tests/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o"
+	/usr/local/share/gcc-10.2/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o -c /lzc/backup/FL/src/FL/http/http_servlet.cpp
+
+CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.i"
+	/usr/local/share/gcc-10.2/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /lzc/backup/FL/src/FL/http/http_servlet.cpp > CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.i
+
+CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.s"
+	/usr/local/share/gcc-10.2/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /lzc/backup/FL/src/FL/http/http_servlet.cpp -o CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.s
+
+CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: CMakeFiles/exampleSocket.dir/flags.make
+CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/http/http_connection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/lzc/backup/FL/tests/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o"
+	/usr/local/share/gcc-10.2/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o -c /lzc/backup/FL/src/FL/http/http_connection.cpp
+
+CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.i"
+	/usr/local/share/gcc-10.2/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /lzc/backup/FL/src/FL/http/http_connection.cpp > CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.i
+
+CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.s"
+	/usr/local/share/gcc-10.2/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /lzc/backup/FL/src/FL/http/http_connection.cpp -o CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.s
+
 # Object files for target exampleSocket
 exampleSocket_OBJECTS = \
 "CMakeFiles/exampleSocket.dir/exampleSocket.cpp.o" \
@@ -380,7 +419,10 @@ exampleSocket_OBJECTS = \
 "CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.o" \
 "CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.o" \
 "CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o" \
-"CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o"
+"CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o" \
+"CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o" \
+"CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o" \
+"CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o"
 
 # External object files for target exampleSocket
 exampleSocket_EXTERNAL_OBJECTS =
@@ -408,9 +450,12 @@ exampleSocket_EXTERNAL_OBJECTS =
 /lzc/backup/FL/build/exampleSocket: CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.o
 /lzc/backup/FL/build/exampleSocket: CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o
 /lzc/backup/FL/build/exampleSocket: CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o
+/lzc/backup/FL/build/exampleSocket: CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o
+/lzc/backup/FL/build/exampleSocket: CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o
+/lzc/backup/FL/build/exampleSocket: CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o
 /lzc/backup/FL/build/exampleSocket: CMakeFiles/exampleSocket.dir/build.make
 /lzc/backup/FL/build/exampleSocket: CMakeFiles/exampleSocket.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/lzc/backup/FL/tests/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable /lzc/backup/FL/build/exampleSocket"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/lzc/backup/FL/tests/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable /lzc/backup/FL/build/exampleSocket"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/exampleSocket.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

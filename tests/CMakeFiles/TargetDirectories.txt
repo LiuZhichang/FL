@@ -1,3 +1,5 @@
+/lzc/backup/FL/tests/CMakeFiles/exampleHttpconnection.dir
+/lzc/backup/FL/tests/CMakeFiles/exampleHttpserver.dir
 /lzc/backup/FL/tests/CMakeFiles/exampleLog.dir
 /lzc/backup/FL/tests/CMakeFiles/exampleThread.dir
 /lzc/backup/FL/tests/CMakeFiles/exampleCoroutine2.dir

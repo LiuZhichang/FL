@@ -18,14 +18,28 @@ static FL::ConfigVar<uint64_t>::ptr g_http_request_buffer_size =
 static FL::ConfigVar<uint64_t>::ptr g_http_request_max_body_size =
     FL::Config::Lookup("http.request.max_body_size", 64 * 1024 * 1024ul, "http request max body size");
 
+static FL::ConfigVar<uint64_t>::ptr g_http_response_buffer_size =
+    FL::Config::Lookup("http.response.buffer_size", 4 * 1024ul, "http response buffer size");
+
+static FL::ConfigVar<uint64_t>::ptr g_http_response_max_body_size =
+    FL::Config::Lookup("http.response.max_body_size", 64 * 1024 * 1024ul, "http response max body size");
+
 static uint64_t s_http_request_buffer_size = 0;
 static uint64_t s_http_request_max_body_size = 0;
+static uint64_t s_http_response_buffer_size = 0;
+static uint64_t s_http_response_max_body_size = 0;
 
 uint64_t HttpRequestParser::GetHttpRequestBufferSize() {
     return s_http_request_buffer_size;
 }
-uint64_t HttpRequestParser::GetHttpResponsetMaxBodySize() {
+uint64_t HttpRequestParser::GetHttpResquestMaxBodySize() {
     return s_http_request_max_body_size;
+}
+uint64_t HttpResponseParser::GetHttpResponseBufferSize() {
+    return s_http_response_buffer_size;
+}
+uint64_t HttpResponseParser::GetHttpResponseMaxBodySize() {
+    return s_http_response_max_body_size;
 }
 
 namespace {
@@ -33,6 +47,10 @@ struct __RequestSizeIniter__ {
     __RequestSizeIniter__() {
         s_http_request_buffer_size = g_http_request_buffer_size->getVal();
         s_http_request_max_body_size = g_http_request_max_body_size->getVal();
+
+        s_http_response_buffer_size = g_http_response_buffer_size->getVal();
+        s_http_response_max_body_size = g_http_response_max_body_size->getVal();
+
         g_http_request_buffer_size->addListener(
         [](const uint64_t& old_v, const uint64_t& new_v) {
             s_http_request_buffer_size = new_v;
@@ -41,6 +59,18 @@ struct __RequestSizeIniter__ {
         g_http_request_max_body_size->addListener(
         [](const uint64_t& old_v, const uint64_t& new_v) {
             s_http_request_max_body_size = new_v;
+        }
+        );
+
+        g_http_response_buffer_size->addListener(
+        [](const uint64_t& old_v, const uint64_t& new_v) {
+            s_http_response_buffer_size = new_v;
+
+        }
+        );
+        g_http_response_max_body_size->addListener(
+        [](const uint64_t& old_v, const uint64_t& new_v) {
+            s_http_response_max_body_size = new_v;
         }
         );
     }
@@ -164,12 +194,12 @@ HttpRequestParser::HttpRequestParser()
     m_parser.data			= this;
 }
 
-size_t HttpRequestParser::execute(char* data, size_t len, size_t off) {
-    size_t offset = http_parser_execute(&m_parser, data, len, off);
+size_t HttpRequestParser::execute(char* data, size_t len) {
+    size_t offset = http_parser_execute(&m_parser, data, len, 0);
     if(offset == -1) {
         FL_LOG_WARN(syslog) << "invalid request: " << std::string(data, len);
     } else if(offset != 1) {
-        memmove(data, data + off + offset, (len - off - offset));
+        memmove(data, data + offset, (len - offset));
     }
     return offset;
 }
@@ -182,7 +212,7 @@ bool HttpRequestParser::hasError() {
     return m_error || http_parser_has_error(&m_parser);
 }
 uint64_t HttpRequestParser::getContentLength() {
-	return m_request->getHaderAs<uint64_t>("content-length",0);
+    return m_request->getHaderAs<uint64_t>("content-length", 0);
 }
 
 HttpResponseParser::HttpResponseParser()
@@ -200,13 +230,12 @@ HttpResponseParser::HttpResponseParser()
     m_parser.data			= this;
 }
 
-size_t HttpResponseParser::execute(char* data, size_t len, size_t off) {
-    size_t offset = httpclient_parser_execute(&m_parser, data, len, off);
-    if(offset == -1) {
-        FL_LOG_WARN(syslog) << "invalid response: " << std::string(data, len);
-    } else if(offset != 1) {
-        memmove(data, data + offset, (len - offset));
+size_t HttpResponseParser::execute(char* data, size_t len, bool chunk) {
+    if(chunk) {
+        httpclient_parser_init(&m_parser);
     }
+    size_t offset = httpclient_parser_execute(&m_parser, data, len, 0);
+    memmove(data, data + offset, (len - offset));
     return offset;
 }
 
@@ -216,6 +245,10 @@ bool HttpResponseParser::isFinish() {
 
 bool HttpResponseParser::hasError() {
     return m_error || httpclient_parser_has_error(&m_parser);
+}
+
+uint64_t HttpResponseParser::getContentLength() {
+    return m_response->getHaderAs<uint64_t>("content-length", 0);
 }
 
 }

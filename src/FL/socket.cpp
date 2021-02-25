@@ -172,7 +172,6 @@ bool Socket::connect(const Address::ptr addr, uint64_t timeout_ms) {
     }
 
     if(timeout_ms == (uint64_t) -1) {
-        FL_LOG_DEBUG(FL_LOG_ROOT()) << "no timeout";
 //      int rt = ::connect(m_sock, addr->getAddr(), addr->getAddrLen());
 //		FL_LOG_DEBUG(FL_LOG_ROOT()) << rt;
         if(::connect(m_sock, addr->getAddr(), addr->getAddrLen())) {

@@ -81,6 +81,21 @@ CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.o: /lzc/b
 CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.o: /lzc/backup/FL/src/FL/http/http11_parser.cpp
 CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.o: /lzc/backup/FL/src/FL/http/http11_parser.h
 
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/ScopeGuard.hpp
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/address.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/bytearray.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/http/http.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/http/http11_common.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/http/http11_parser.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/http/http_connection.cpp
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/http/http_connection.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/http/http_parser.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/http/httpclient_parser.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/noncopyable.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/socket.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/socket_stream.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/stream.h
+
 CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o: /lzc/backup/FL/src/FL/config.h
 CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o: /lzc/backup/FL/src/FL/http/http.h
 CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o: /lzc/backup/FL/src/FL/http/http11_common.h
@@ -94,6 +109,61 @@ CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o: /lzc/bac
 CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o: /lzc/backup/FL/src/FL/noncopyable.h
 CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o: /lzc/backup/FL/src/FL/singleton.h
 CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o: /lzc/backup/FL/src/FL/util.h
+
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/address.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/bytearray.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/coroutine.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/http/http.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/http/http_server.cpp
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/http/http_server.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/http/http_servlet.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/http/http_session.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/iomanager.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/log.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/logmanager.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/mutex.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/noncopyable.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/scheduler.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/singleton.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/socket.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/socket_stream.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/stream.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/tcp_server.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/thread.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/timer.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o: /lzc/backup/FL/src/FL/util.h
+
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/address.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/bytearray.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/http/http.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/http/http_servlet.cpp
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/http/http_servlet.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/http/http_session.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/http/resource/rsp_page.hpp
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/log.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/logmanager.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/mutex.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/noncopyable.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/singleton.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/socket.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/socket_stream.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/stream.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o: /lzc/backup/FL/src/FL/util.h
+
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o: /lzc/backup/FL/src/FL/ScopeGuard.hpp
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o: /lzc/backup/FL/src/FL/address.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o: /lzc/backup/FL/src/FL/bytearray.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o: /lzc/backup/FL/src/FL/http/http.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o: /lzc/backup/FL/src/FL/http/http11_common.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o: /lzc/backup/FL/src/FL/http/http11_parser.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o: /lzc/backup/FL/src/FL/http/http_parser.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o: /lzc/backup/FL/src/FL/http/http_session.cpp
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o: /lzc/backup/FL/src/FL/http/http_session.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o: /lzc/backup/FL/src/FL/http/httpclient_parser.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o: /lzc/backup/FL/src/FL/noncopyable.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o: /lzc/backup/FL/src/FL/socket.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o: /lzc/backup/FL/src/FL/socket_stream.h
+CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o: /lzc/backup/FL/src/FL/stream.h
 
 CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.o: /lzc/backup/FL/src/FL/http/http11_common.h
 CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.o: /lzc/backup/FL/src/FL/http/httpclient_parser.cpp
@@ -127,10 +197,6 @@ CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/logmanager.cpp.o: /lzc/backup/FL
 CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/logmanager.cpp.o: /lzc/backup/FL/src/FL/noncopyable.h
 CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/logmanager.cpp.o: /lzc/backup/FL/src/FL/singleton.h
 CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/logmanager.cpp.o: /lzc/backup/FL/src/FL/util.h
-
-CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/mutex.cpp.o: /lzc/backup/FL/src/FL/mutex.cpp
-CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/mutex.cpp.o: /lzc/backup/FL/src/FL/mutex.h
-CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/mutex.cpp.o: /lzc/backup/FL/src/FL/noncopyable.h
 
 CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/scheduler.cpp.o: /lzc/backup/FL/src/FL/coroutine.h
 CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/scheduler.cpp.o: /lzc/backup/FL/src/FL/fd_manager.h

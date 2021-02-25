@@ -27,6 +27,9 @@ SET(SRC
 	${FL_PATH}/http/httpclient_parser.cpp
 	${FL_PATH}/http/http_parser.cpp
 	${FL_PATH}/http/http_session.cpp
+	${FL_PATH}/http/http_server.cpp
+	${FL_PATH}/http/http_servlet.cpp
+	${FL_PATH}/http/http_connection.cpp
 	)
 SET(T_LIB
 	dl
@@ -96,3 +99,10 @@ project(exampleEcho)
 add_executable(${PROJECT_NAME} ./exampleEcho.cpp ${SRC})
 target_link_libraries(${PROJECT_NAME} ${T_LIB})
 
+project(exampleHttpserver)
+add_executable(${PROJECT_NAME} ./exampleHttpserver.cpp ${SRC})
+target_link_libraries(${PROJECT_NAME} ${T_LIB})
+
+project(exampleHttpconnection)
+add_executable(${PROJECT_NAME} ./exampleHttpconnection.cpp ${SRC})
+target_link_libraries(${PROJECT_NAME} ${T_LIB})

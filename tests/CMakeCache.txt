@@ -139,7 +139,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=exampleEcho
+CMAKE_PROJECT_NAME:STATIC=exampleHttpconnection
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -253,6 +253,18 @@ exampleHttp_BINARY_DIR:STATIC=/lzc/backup/FL/tests
 
 //Value Computed by CMake
 exampleHttp_SOURCE_DIR:STATIC=/lzc/backup/FL/tests
+
+//Value Computed by CMake
+exampleHttpconnection_BINARY_DIR:STATIC=/lzc/backup/FL/tests
+
+//Value Computed by CMake
+exampleHttpconnection_SOURCE_DIR:STATIC=/lzc/backup/FL/tests
+
+//Value Computed by CMake
+exampleHttpserver_BINARY_DIR:STATIC=/lzc/backup/FL/tests
+
+//Value Computed by CMake
+exampleHttpserver_SOURCE_DIR:STATIC=/lzc/backup/FL/tests
 
 //Value Computed by CMake
 exampleLog_BINARY_DIR:STATIC=/lzc/backup/FL/tests

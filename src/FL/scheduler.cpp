@@ -9,6 +9,8 @@
 
 namespace FL {
 
+static Logger::ptr syslog = FL_SYS_LOG();
+
 static thread_local Scheduler* t_scheduler = nullptr;
 static thread_local	Coroutine* t_scheduler_coroutine = nullptr;
 
@@ -79,7 +81,7 @@ void Scheduler::stop() {
             && m_threadCount == 0
             && (m_mainCoroutine->getState() == Coroutine::State::TERMINATE
                 || m_mainCoroutine->getState() == Coroutine::State::INIT)) {
-        FL_LOG_INFO(FL_LOG_ROOT()) << this << " stopped";
+        FL_LOG_INFO(syslog) << this << " stopped";
         m_stopping = true;
 
         if(stopping()) {
@@ -125,7 +127,7 @@ void Scheduler::setThis() {
 }
 
 void Scheduler::run() {
-    FL_LOG_DEBUG(FL_LOG_ROOT()) << "< Scheduler: " << m_name << " Run >";
+    FL_LOG_DEBUG(syslog) << " Scheduler: " << UT::GetThreadName();
 
     set_hook_enable(true);
     setThis();
@@ -207,7 +209,7 @@ void Scheduler::run() {
                 continue;
             }
             if(idle_Coroutine->getState() == Coroutine::State::TERMINATE) {
-                FL_LOG_INFO(FL_LOG_ROOT()) << "< Idle Coroutine state[TERMINATE] >";
+                FL_LOG_INFO(syslog) << "< Idle Coroutine state[TERMINATE] >";
                 break;
             }
 
@@ -223,7 +225,7 @@ void Scheduler::run() {
 }
 
 void Scheduler::tickle() {
-    FL_LOG_INFO(FL_LOG_ROOT()) << "< Tickle >";
+    FL_LOG_INFO(syslog) << "< Tickle >";
 }
 
 bool Scheduler::stopping() {
@@ -233,7 +235,7 @@ bool Scheduler::stopping() {
 }
 
 void Scheduler::idle() {
-    FL_LOG_INFO(FL_LOG_ROOT()) << "< Idle >";
+    FL_LOG_INFO(syslog) << "< Idle >";
     while(!stopping()) {
         Coroutine::YieldToSuspend();
     }

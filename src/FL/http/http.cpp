@@ -211,7 +211,6 @@ HttpResponse::HttpResponse(uint8_t version, bool close)
     : m_status(HttpStatus::OK)
     , m_version(version)
     , m_close(close) {
-
 }
 
 std::string HttpResponse::getHeader(const std::string& key, const std::string& def) const {
