@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.2)
 
+project(FL)
+
 SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY ../build/)
 SET(CMAKE_BUILD_TYPE debug)
 SET(CMKAE_CXX_FLAGS_DEBUG -g)
@@ -22,6 +24,7 @@ SET(SRC
 	${FL_PATH}/tcp_server.cpp
 	${FL_PATH}/stream.cpp
 	${FL_PATH}/socket_stream.cpp
+	${FL_PATH}/uri.cpp
 	${FL_PATH}/http/http.cpp
 	${FL_PATH}/http/http11_parser.cpp
 	${FL_PATH}/http/httpclient_parser.cpp
@@ -31,6 +34,7 @@ SET(SRC
 	${FL_PATH}/http/http_servlet.cpp
 	${FL_PATH}/http/http_connection.cpp
 	)
+add_library(FL SHARED ${SRC})
 SET(T_LIB
 	dl
 	yaml-cpp
@@ -39,70 +43,23 @@ SET(T_LIB
 
 #include_directories(../src/FL)
 
-project(exampleLog)
-add_executable(${PROJECT_NAME} ./exampleLog.cpp ${SRC})
-target_link_libraries(${PROJECT_NAME} ${T_LIB})
+link_libraries(FL ${T_LIB})
 
-project(exampleThread)
-add_executable(${PROJECT_NAME} ./exampleThread.cpp ${SRC})
-target_link_libraries(${PROJECT_NAME} ${T_LIB})
-
-project(exampleCoroutine)
-add_executable(${PROJECT_NAME} ./exampleCoroutine.cpp ${SRC})
-target_link_libraries(${PROJECT_NAME} ${T_LIB})
-
-project(exampleCoroutine2)
-add_executable(${PROJECT_NAME} ./exampleCoroutine2.cpp ${SRC})
-target_link_libraries(${PROJECT_NAME} ${T_LIB})
-
-project(exampleScheduler)
-add_executable(${PROJECT_NAME} ./exampleScheduler.cpp ${SRC})
-target_link_libraries(${PROJECT_NAME} ${T_LIB})
-
-project(exampleiomanager)
-add_executable(${PROJECT_NAME} ./exampleiomanager.cpp ${SRC})
-target_link_libraries(${PROJECT_NAME} ${T_LIB})
-
-project(exampleTimer)
-add_executable(${PROJECT_NAME} ./exampleTimer.cpp ${SRC})
-target_link_libraries(${PROJECT_NAME} ${T_LIB})
-
-project(exampleHook)
-add_executable(${PROJECT_NAME} ./exampleHook.cpp ${SRC})
-target_link_libraries(${PROJECT_NAME} ${T_LIB})
-
-project(exampleAddress)
-add_executable(${PROJECT_NAME} ./exampleAddress.cpp ${SRC})
-target_link_libraries(${PROJECT_NAME} ${T_LIB})
-
-project(exampleSocket)
-add_executable(${PROJECT_NAME} ./exampleSocket.cpp ${SRC})
-target_link_libraries(${PROJECT_NAME} ${T_LIB})
-
-project(exampleByteArray)
-add_executable(${PROJECT_NAME} ./exampleByteArray.cpp ${SRC})
-target_link_libraries(${PROJECT_NAME} ${T_LIB})
-
-project(exampleHttp)
-add_executable(${PROJECT_NAME} ./exampleHttp.cpp ${SRC})
-target_link_libraries(${PROJECT_NAME} ${T_LIB})
-
-project(exampleHttpParser)
-add_executable(${PROJECT_NAME} ./exampleHttpParser.cpp ${SRC})
-target_link_libraries(${PROJECT_NAME} ${T_LIB})
-
-project(exampleTcpserver)
-add_executable(${PROJECT_NAME} ./exampleTcpserver.cpp ${SRC})
-target_link_libraries(${PROJECT_NAME} ${T_LIB})
-
-project(exampleEcho)
-add_executable(${PROJECT_NAME} ./exampleEcho.cpp ${SRC})
-target_link_libraries(${PROJECT_NAME} ${T_LIB})
-
-project(exampleHttpserver)
-add_executable(${PROJECT_NAME} ./exampleHttpserver.cpp ${SRC})
-target_link_libraries(${PROJECT_NAME} ${T_LIB})
-
-project(exampleHttpconnection)
-add_executable(${PROJECT_NAME} ./exampleHttpconnection.cpp ${SRC})
-target_link_libraries(${PROJECT_NAME} ${T_LIB})
+add_executable(exampleLog ./exampleLog.cpp )
+add_executable(exampleThread ./exampleThread.cpp )
+add_executable(exampleCoroutine ./exampleCoroutine.cpp )
+add_executable(exampleCoroutine2 ./exampleCoroutine2.cpp )
+add_executable(exampleScheduler ./exampleScheduler.cpp )
+add_executable(exampleiomanager ./exampleiomanager.cpp )
+add_executable(exampleTimer ./exampleTimer.cpp )
+add_executable(exampleHook ./exampleHook.cpp )
+add_executable(exampleAddress ./exampleAddress.cpp )
+add_executable(exampleSocket ./exampleSocket.cpp )
+add_executable(exampleByteArray ./exampleByteArray.cpp )
+add_executable(exampleHttp ./exampleHttp.cpp )
+add_executable(exampleHttpParser ./exampleHttpParser.cpp )
+add_executable(exampleTcpserver ./exampleTcpserver.cpp )
+add_executable(exampleEcho ./exampleEcho.cpp )
+add_executable(exampleHttpserver ./exampleHttpserver.cpp )
+add_executable(exampleHttpconnection ./exampleHttpconnection.cpp )
+add_executable(exampleUri ./exampleUri.cpp )

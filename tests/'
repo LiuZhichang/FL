@@ -1,0 +1,59 @@
+cmake_minimum_required(VERSION 3.2)
+
+SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY ../build/)
+SET(CMAKE_BUILD_TYPE debug)
+SET(CMKAE_CXX_FLAGS_DEBUG -g)
+SET(FL_PATH ../src/FL)
+SET(SRC
+	${FL_PATH}/logmanager.cpp
+	${FL_PATH}/log.cpp
+	${FL_PATH}/util.cpp
+	${FL_PATH}/config.cpp
+	${FL_PATH}/thread.cpp
+	${FL_PATH}/coroutine.cpp
+	${FL_PATH}/scheduler.cpp
+	${FL_PATH}/iomanager.cpp
+	${FL_PATH}/timer.cpp
+	${FL_PATH}/hook.cpp
+	${FL_PATH}/fd_manager.cpp
+	${FL_PATH}/address.cpp
+	${FL_PATH}/socket.cpp
+	${FL_PATH}/bytearray.cpp
+	${FL_PATH}/tcp_server.cpp
+	${FL_PATH}/stream.cpp
+	${FL_PATH}/socket_stream.cpp
+	${FL_PATH}/http/http.cpp
+	${FL_PATH}/http/http11_parser.cpp
+	${FL_PATH}/http/httpclient_parser.cpp
+	${FL_PATH}/http/http_parser.cpp
+	${FL_PATH}/http/http_session.cpp
+	${FL_PATH}/http/http_server.cpp
+	${FL_PATH}/http/http_servlet.cpp
+	${FL_PATH}/http/http_connection.cpp
+	)
+add_library(FL SHARED ${T_LIB})
+SET(T_LIB
+	dl
+	yaml-cpp
+	pthread
+	)
+
+#include_directories(../src/FL)
+
+add_executable(exampleLog ./exampleLog.cpp ${SRC})
+add_executable(example ./exampleThread.cpp ${SRC})
+add_executable(example ./exampleCoroutine.cpp ${SRC})
+add_executable(example ./exampleCoroutine2.cpp ${SRC})
+add_executable(example ./exampleScheduler.cpp ${SRC})
+add_executable(example ./exampleiomanager.cpp ${SRC})
+add_executable(example ./exampleTimer.cpp ${SRC})
+add_executable(example ./exampleHook.cpp ${SRC})
+add_executable(example ./exampleAddress.cpp ${SRC})
+add_executable(example ./exampleSocket.cpp ${SRC})
+add_executable(example ./exampleByteArray.cpp ${SRC})
+add_executable(example ./exampleHttp.cpp ${SRC})
+add_executable(example ./exampleHttpParser.cpp ${SRC})
+add_executable(example ./exampleTcpserver.cpp ${SRC})
+add_executable(example ./exampleEcho.cpp ${SRC})
+add_executable(example ./exampleHttpserver.cpp ${SRC})
+add_executable(example ./exampleHttpconnection.cpp ${SRC})

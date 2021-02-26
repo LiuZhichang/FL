@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/lzc/backup/FL/src/FL/address.h
+iostream
+-
+memory
+-
+vector
+-
+map
+-
+string
+-
+sys/socket.h
+-
+sys/types.h
+-
+sys/un.h
+-
+arpa/inet.h
+-
+
+/lzc/backup/FL/src/FL/uri.h
+memory
+-
+string
+-
+address.h
+/lzc/backup/FL/src/FL/address.h
+
+/lzc/backup/FL/tests/exampleUri.cpp
+../src/FL/uri.h
+/lzc/backup/FL/src/FL/uri.h
+iostream
+-
+

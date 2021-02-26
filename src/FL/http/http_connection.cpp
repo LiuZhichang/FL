@@ -2,6 +2,7 @@
 #include "http11_parser.h"
 #include "httpclient_parser.h"
 #include "http_parser.h"
+
 #include "../ScopeGuard.hpp"
 #include <cstring>
 
@@ -126,6 +127,55 @@ int HttpConnection::sendRequest(HttpRequest::ptr rsp) {
     return writeFixSize(data.c_str(), data.size());
 }
 
+HttpResult::ptr HttpConnection::DoGet(const std::string& url
+                                      , uint64_t timeout
+                                      , const Map_t& headers
+                                      , const std::string body) {
+
+}
+
+HttpResult::ptr HttpConnection::DoGet(Uri::ptr uri
+                                      , uint64_t timeout
+                                      , const Map_t& headers
+                                      , const std::string body) {
+
+}
+
+HttpResult::ptr HttpConnection::DoPost(const std::string& url
+                                       , uint64_t timeout
+                                       , const Map_t& headers
+                                       , const std::string body) {
+
+}
+
+HttpResult::ptr HttpConnection::DoPost(Uri::ptr uri
+                                       , uint64_t timeout
+                                       , const Map_t& headers
+                                       , const std::string body) {
+
+}
+
+HttpResult::ptr HttpConnection::DoRequest(HttpMethod method
+        , const std::string& url
+        , uint64_t timeout
+        , const Map_t& headers
+        , const std::string body) {
+
+}
+
+HttpResult::ptr HttpConnection::DoRequest(HttpMethod method
+        , Uri::ptr uri
+        , uint64_t timeout
+        , const Map_t& headers
+        , const std::string body) {
+
+}
+
+HttpResult::ptr HttpConnection::DoRequest(HttpRequest::ptr req
+        , Uri::ptr uri
+        , uint64_t timeout) {
+
+}
 
 }
 }

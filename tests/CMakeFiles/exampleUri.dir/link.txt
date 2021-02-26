@@ -1,0 +1,1 @@
+/usr/local/share/gcc-10.2/bin/c++  -g  -rdynamic CMakeFiles/exampleUri.dir/exampleUri.cpp.o  -o /lzc/backup/FL/build/exampleUri -Wl,-rpath,/lzc/backup/FL/tests libFL.so -ldl -lyaml-cpp -lpthread 

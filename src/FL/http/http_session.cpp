@@ -23,16 +23,19 @@ HttpRequest::ptr HttpSession::recvRequest() {
     do {
         int len = read(buffer + offset, buf_size - offset);
         if(len <= 0) {
+			close();
             return nullptr;
         }
 
         len += offset;
         size_t nparser = parser->execute(buffer, len);
         if(parser->hasError()) {
+			close();
             return nullptr;
         }
         offset = len - nparser;
         if(offset == buf_size) {
+			close();
             return nullptr;
         }
 

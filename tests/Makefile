@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named exampleUri
+
+# Build rule for target.
+exampleUri: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exampleUri
+.PHONY : exampleUri
+
+# fast build rule for target.
+exampleUri/fast:
+	$(MAKE) -f CMakeFiles/exampleUri.dir/build.make CMakeFiles/exampleUri.dir/build
+.PHONY : exampleUri/fast
+
+#=============================================================================
 # Target rules for targets named exampleHttpconnection
 
 # Build rule for target.
@@ -135,6 +148,32 @@ exampleHttpserver: cmake_check_build_system
 exampleHttpserver/fast:
 	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/build
 .PHONY : exampleHttpserver/fast
+
+#=============================================================================
+# Target rules for targets named exampleHttpParser
+
+# Build rule for target.
+exampleHttpParser: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exampleHttpParser
+.PHONY : exampleHttpParser
+
+# fast build rule for target.
+exampleHttpParser/fast:
+	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/build
+.PHONY : exampleHttpParser/fast
+
+#=============================================================================
+# Target rules for targets named FL
+
+# Build rule for target.
+FL: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 FL
+.PHONY : FL
+
+# fast build rule for target.
+FL/fast:
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/build
+.PHONY : FL/fast
 
 #=============================================================================
 # Target rules for targets named exampleLog
@@ -304,19 +343,6 @@ exampleAddress: cmake_check_build_system
 exampleAddress/fast:
 	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/build
 .PHONY : exampleAddress/fast
-
-#=============================================================================
-# Target rules for targets named exampleHttpParser
-
-# Build rule for target.
-exampleHttpParser: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 exampleHttpParser
-.PHONY : exampleHttpParser
-
-# fast build rule for target.
-exampleHttpParser/fast:
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/build
-.PHONY : exampleHttpParser/fast
 
 #=============================================================================
 # Target rules for targets named exampleHttp
@@ -763,6 +789,33 @@ exampleTimer.cpp.s:
 	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/exampleTimer.cpp.s
 .PHONY : exampleTimer.cpp.s
 
+exampleUri.o: exampleUri.cpp.o
+
+.PHONY : exampleUri.o
+
+# target to build an object file
+exampleUri.cpp.o:
+	$(MAKE) -f CMakeFiles/exampleUri.dir/build.make CMakeFiles/exampleUri.dir/exampleUri.cpp.o
+.PHONY : exampleUri.cpp.o
+
+exampleUri.i: exampleUri.cpp.i
+
+.PHONY : exampleUri.i
+
+# target to preprocess a source file
+exampleUri.cpp.i:
+	$(MAKE) -f CMakeFiles/exampleUri.dir/build.make CMakeFiles/exampleUri.dir/exampleUri.cpp.i
+.PHONY : exampleUri.cpp.i
+
+exampleUri.s: exampleUri.cpp.s
+
+.PHONY : exampleUri.s
+
+# target to generate assembly for a file
+exampleUri.cpp.s:
+	$(MAKE) -f CMakeFiles/exampleUri.dir/build.make CMakeFiles/exampleUri.dir/exampleUri.cpp.s
+.PHONY : exampleUri.cpp.s
+
 exampleiomanager.o: exampleiomanager.cpp.o
 
 .PHONY : exampleiomanager.o
@@ -796,23 +849,7 @@ lzc/backup/FL/src/FL/address.o: lzc/backup/FL/src/FL/address.cpp.o
 
 # target to build an object file
 lzc/backup/FL/src/FL/address.cpp.o:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/address.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/address.cpp.o
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/address.cpp.o
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/address.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/address.cpp.o
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/address.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/address.cpp.o
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/address.cpp.o
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/address.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/address.cpp.o
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/address.cpp.o
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/address.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/address.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/address.cpp.o
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/address.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/address.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/address.cpp.o
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/address.cpp.o
 .PHONY : lzc/backup/FL/src/FL/address.cpp.o
 
 lzc/backup/FL/src/FL/address.i: lzc/backup/FL/src/FL/address.cpp.i
@@ -821,23 +858,7 @@ lzc/backup/FL/src/FL/address.i: lzc/backup/FL/src/FL/address.cpp.i
 
 # target to preprocess a source file
 lzc/backup/FL/src/FL/address.cpp.i:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/address.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/address.cpp.i
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/address.cpp.i
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/address.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/address.cpp.i
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/address.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/address.cpp.i
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/address.cpp.i
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/address.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/address.cpp.i
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/address.cpp.i
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/address.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/address.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/address.cpp.i
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/address.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/address.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/address.cpp.i
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/address.cpp.i
 .PHONY : lzc/backup/FL/src/FL/address.cpp.i
 
 lzc/backup/FL/src/FL/address.s: lzc/backup/FL/src/FL/address.cpp.s
@@ -846,23 +867,7 @@ lzc/backup/FL/src/FL/address.s: lzc/backup/FL/src/FL/address.cpp.s
 
 # target to generate assembly for a file
 lzc/backup/FL/src/FL/address.cpp.s:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/address.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/address.cpp.s
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/address.cpp.s
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/address.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/address.cpp.s
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/address.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/address.cpp.s
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/address.cpp.s
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/address.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/address.cpp.s
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/address.cpp.s
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/address.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/address.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/address.cpp.s
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/address.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/address.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/address.cpp.s
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/address.cpp.s
 .PHONY : lzc/backup/FL/src/FL/address.cpp.s
 
 lzc/backup/FL/src/FL/bytearray.o: lzc/backup/FL/src/FL/bytearray.cpp.o
@@ -871,23 +876,7 @@ lzc/backup/FL/src/FL/bytearray.o: lzc/backup/FL/src/FL/bytearray.cpp.o
 
 # target to build an object file
 lzc/backup/FL/src/FL/bytearray.cpp.o:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/bytearray.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/bytearray.cpp.o
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/bytearray.cpp.o
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/bytearray.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/bytearray.cpp.o
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/bytearray.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/bytearray.cpp.o
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/bytearray.cpp.o
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/bytearray.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/bytearray.cpp.o
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/bytearray.cpp.o
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/bytearray.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/bytearray.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/bytearray.cpp.o
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/bytearray.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/bytearray.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/bytearray.cpp.o
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/bytearray.cpp.o
 .PHONY : lzc/backup/FL/src/FL/bytearray.cpp.o
 
 lzc/backup/FL/src/FL/bytearray.i: lzc/backup/FL/src/FL/bytearray.cpp.i
@@ -896,23 +885,7 @@ lzc/backup/FL/src/FL/bytearray.i: lzc/backup/FL/src/FL/bytearray.cpp.i
 
 # target to preprocess a source file
 lzc/backup/FL/src/FL/bytearray.cpp.i:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/bytearray.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/bytearray.cpp.i
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/bytearray.cpp.i
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/bytearray.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/bytearray.cpp.i
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/bytearray.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/bytearray.cpp.i
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/bytearray.cpp.i
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/bytearray.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/bytearray.cpp.i
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/bytearray.cpp.i
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/bytearray.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/bytearray.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/bytearray.cpp.i
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/bytearray.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/bytearray.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/bytearray.cpp.i
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/bytearray.cpp.i
 .PHONY : lzc/backup/FL/src/FL/bytearray.cpp.i
 
 lzc/backup/FL/src/FL/bytearray.s: lzc/backup/FL/src/FL/bytearray.cpp.s
@@ -921,23 +894,7 @@ lzc/backup/FL/src/FL/bytearray.s: lzc/backup/FL/src/FL/bytearray.cpp.s
 
 # target to generate assembly for a file
 lzc/backup/FL/src/FL/bytearray.cpp.s:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/bytearray.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/bytearray.cpp.s
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/bytearray.cpp.s
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/bytearray.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/bytearray.cpp.s
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/bytearray.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/bytearray.cpp.s
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/bytearray.cpp.s
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/bytearray.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/bytearray.cpp.s
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/bytearray.cpp.s
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/bytearray.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/bytearray.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/bytearray.cpp.s
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/bytearray.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/bytearray.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/bytearray.cpp.s
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/bytearray.cpp.s
 .PHONY : lzc/backup/FL/src/FL/bytearray.cpp.s
 
 lzc/backup/FL/src/FL/config.o: lzc/backup/FL/src/FL/config.cpp.o
@@ -946,23 +903,7 @@ lzc/backup/FL/src/FL/config.o: lzc/backup/FL/src/FL/config.cpp.o
 
 # target to build an object file
 lzc/backup/FL/src/FL/config.cpp.o:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/config.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/config.cpp.o
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/config.cpp.o
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/config.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/config.cpp.o
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/config.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/config.cpp.o
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/config.cpp.o
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/config.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/config.cpp.o
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/config.cpp.o
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/config.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/config.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/config.cpp.o
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/config.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/config.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/config.cpp.o
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/config.cpp.o
 .PHONY : lzc/backup/FL/src/FL/config.cpp.o
 
 lzc/backup/FL/src/FL/config.i: lzc/backup/FL/src/FL/config.cpp.i
@@ -971,23 +912,7 @@ lzc/backup/FL/src/FL/config.i: lzc/backup/FL/src/FL/config.cpp.i
 
 # target to preprocess a source file
 lzc/backup/FL/src/FL/config.cpp.i:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/config.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/config.cpp.i
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/config.cpp.i
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/config.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/config.cpp.i
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/config.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/config.cpp.i
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/config.cpp.i
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/config.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/config.cpp.i
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/config.cpp.i
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/config.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/config.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/config.cpp.i
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/config.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/config.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/config.cpp.i
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/config.cpp.i
 .PHONY : lzc/backup/FL/src/FL/config.cpp.i
 
 lzc/backup/FL/src/FL/config.s: lzc/backup/FL/src/FL/config.cpp.s
@@ -996,23 +921,7 @@ lzc/backup/FL/src/FL/config.s: lzc/backup/FL/src/FL/config.cpp.s
 
 # target to generate assembly for a file
 lzc/backup/FL/src/FL/config.cpp.s:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/config.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/config.cpp.s
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/config.cpp.s
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/config.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/config.cpp.s
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/config.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/config.cpp.s
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/config.cpp.s
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/config.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/config.cpp.s
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/config.cpp.s
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/config.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/config.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/config.cpp.s
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/config.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/config.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/config.cpp.s
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/config.cpp.s
 .PHONY : lzc/backup/FL/src/FL/config.cpp.s
 
 lzc/backup/FL/src/FL/coroutine.o: lzc/backup/FL/src/FL/coroutine.cpp.o
@@ -1021,23 +930,7 @@ lzc/backup/FL/src/FL/coroutine.o: lzc/backup/FL/src/FL/coroutine.cpp.o
 
 # target to build an object file
 lzc/backup/FL/src/FL/coroutine.cpp.o:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/coroutine.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/coroutine.cpp.o
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/coroutine.cpp.o
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/coroutine.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/coroutine.cpp.o
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/coroutine.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/coroutine.cpp.o
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/coroutine.cpp.o
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/coroutine.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/coroutine.cpp.o
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/coroutine.cpp.o
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/coroutine.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/coroutine.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/coroutine.cpp.o
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/coroutine.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/coroutine.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/coroutine.cpp.o
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/coroutine.cpp.o
 .PHONY : lzc/backup/FL/src/FL/coroutine.cpp.o
 
 lzc/backup/FL/src/FL/coroutine.i: lzc/backup/FL/src/FL/coroutine.cpp.i
@@ -1046,23 +939,7 @@ lzc/backup/FL/src/FL/coroutine.i: lzc/backup/FL/src/FL/coroutine.cpp.i
 
 # target to preprocess a source file
 lzc/backup/FL/src/FL/coroutine.cpp.i:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/coroutine.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/coroutine.cpp.i
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/coroutine.cpp.i
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/coroutine.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/coroutine.cpp.i
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/coroutine.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/coroutine.cpp.i
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/coroutine.cpp.i
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/coroutine.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/coroutine.cpp.i
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/coroutine.cpp.i
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/coroutine.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/coroutine.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/coroutine.cpp.i
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/coroutine.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/coroutine.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/coroutine.cpp.i
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/coroutine.cpp.i
 .PHONY : lzc/backup/FL/src/FL/coroutine.cpp.i
 
 lzc/backup/FL/src/FL/coroutine.s: lzc/backup/FL/src/FL/coroutine.cpp.s
@@ -1071,23 +948,7 @@ lzc/backup/FL/src/FL/coroutine.s: lzc/backup/FL/src/FL/coroutine.cpp.s
 
 # target to generate assembly for a file
 lzc/backup/FL/src/FL/coroutine.cpp.s:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/coroutine.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/coroutine.cpp.s
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/coroutine.cpp.s
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/coroutine.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/coroutine.cpp.s
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/coroutine.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/coroutine.cpp.s
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/coroutine.cpp.s
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/coroutine.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/coroutine.cpp.s
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/coroutine.cpp.s
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/coroutine.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/coroutine.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/coroutine.cpp.s
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/coroutine.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/coroutine.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/coroutine.cpp.s
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/coroutine.cpp.s
 .PHONY : lzc/backup/FL/src/FL/coroutine.cpp.s
 
 lzc/backup/FL/src/FL/fd_manager.o: lzc/backup/FL/src/FL/fd_manager.cpp.o
@@ -1096,23 +957,7 @@ lzc/backup/FL/src/FL/fd_manager.o: lzc/backup/FL/src/FL/fd_manager.cpp.o
 
 # target to build an object file
 lzc/backup/FL/src/FL/fd_manager.cpp.o:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/fd_manager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/fd_manager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/fd_manager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/fd_manager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/fd_manager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/fd_manager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/fd_manager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/fd_manager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/fd_manager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/fd_manager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/fd_manager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/fd_manager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/fd_manager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/fd_manager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/fd_manager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/fd_manager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/fd_manager.cpp.o
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/fd_manager.cpp.o
 .PHONY : lzc/backup/FL/src/FL/fd_manager.cpp.o
 
 lzc/backup/FL/src/FL/fd_manager.i: lzc/backup/FL/src/FL/fd_manager.cpp.i
@@ -1121,23 +966,7 @@ lzc/backup/FL/src/FL/fd_manager.i: lzc/backup/FL/src/FL/fd_manager.cpp.i
 
 # target to preprocess a source file
 lzc/backup/FL/src/FL/fd_manager.cpp.i:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/fd_manager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/fd_manager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/fd_manager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/fd_manager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/fd_manager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/fd_manager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/fd_manager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/fd_manager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/fd_manager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/fd_manager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/fd_manager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/fd_manager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/fd_manager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/fd_manager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/fd_manager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/fd_manager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/fd_manager.cpp.i
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/fd_manager.cpp.i
 .PHONY : lzc/backup/FL/src/FL/fd_manager.cpp.i
 
 lzc/backup/FL/src/FL/fd_manager.s: lzc/backup/FL/src/FL/fd_manager.cpp.s
@@ -1146,23 +975,7 @@ lzc/backup/FL/src/FL/fd_manager.s: lzc/backup/FL/src/FL/fd_manager.cpp.s
 
 # target to generate assembly for a file
 lzc/backup/FL/src/FL/fd_manager.cpp.s:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/fd_manager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/fd_manager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/fd_manager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/fd_manager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/fd_manager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/fd_manager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/fd_manager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/fd_manager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/fd_manager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/fd_manager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/fd_manager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/fd_manager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/fd_manager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/fd_manager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/fd_manager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/fd_manager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/fd_manager.cpp.s
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/fd_manager.cpp.s
 .PHONY : lzc/backup/FL/src/FL/fd_manager.cpp.s
 
 lzc/backup/FL/src/FL/hook.o: lzc/backup/FL/src/FL/hook.cpp.o
@@ -1171,23 +984,7 @@ lzc/backup/FL/src/FL/hook.o: lzc/backup/FL/src/FL/hook.cpp.o
 
 # target to build an object file
 lzc/backup/FL/src/FL/hook.cpp.o:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/hook.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/hook.cpp.o
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/hook.cpp.o
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/hook.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/hook.cpp.o
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/hook.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/hook.cpp.o
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/hook.cpp.o
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/hook.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/hook.cpp.o
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/hook.cpp.o
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/hook.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/hook.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/hook.cpp.o
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/hook.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/hook.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/hook.cpp.o
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/hook.cpp.o
 .PHONY : lzc/backup/FL/src/FL/hook.cpp.o
 
 lzc/backup/FL/src/FL/hook.i: lzc/backup/FL/src/FL/hook.cpp.i
@@ -1196,23 +993,7 @@ lzc/backup/FL/src/FL/hook.i: lzc/backup/FL/src/FL/hook.cpp.i
 
 # target to preprocess a source file
 lzc/backup/FL/src/FL/hook.cpp.i:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/hook.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/hook.cpp.i
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/hook.cpp.i
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/hook.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/hook.cpp.i
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/hook.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/hook.cpp.i
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/hook.cpp.i
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/hook.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/hook.cpp.i
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/hook.cpp.i
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/hook.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/hook.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/hook.cpp.i
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/hook.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/hook.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/hook.cpp.i
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/hook.cpp.i
 .PHONY : lzc/backup/FL/src/FL/hook.cpp.i
 
 lzc/backup/FL/src/FL/hook.s: lzc/backup/FL/src/FL/hook.cpp.s
@@ -1221,23 +1002,7 @@ lzc/backup/FL/src/FL/hook.s: lzc/backup/FL/src/FL/hook.cpp.s
 
 # target to generate assembly for a file
 lzc/backup/FL/src/FL/hook.cpp.s:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/hook.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/hook.cpp.s
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/hook.cpp.s
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/hook.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/hook.cpp.s
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/hook.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/hook.cpp.s
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/hook.cpp.s
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/hook.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/hook.cpp.s
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/hook.cpp.s
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/hook.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/hook.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/hook.cpp.s
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/hook.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/hook.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/hook.cpp.s
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/hook.cpp.s
 .PHONY : lzc/backup/FL/src/FL/hook.cpp.s
 
 lzc/backup/FL/src/FL/http/http.o: lzc/backup/FL/src/FL/http/http.cpp.o
@@ -1246,23 +1011,7 @@ lzc/backup/FL/src/FL/http/http.o: lzc/backup/FL/src/FL/http/http.cpp.o
 
 # target to build an object file
 lzc/backup/FL/src/FL/http/http.cpp.o:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/http/http.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/http/http.cpp.o
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/http/http.cpp.o
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/http/http.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/http/http.cpp.o
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/http/http.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/http/http.cpp.o
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http.cpp.o
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/http/http.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/http/http.cpp.o
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http.cpp.o
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/http/http.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/http/http.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/http/http.cpp.o
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/http/http.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/http/http.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http.cpp.o
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http.cpp.o
 .PHONY : lzc/backup/FL/src/FL/http/http.cpp.o
 
 lzc/backup/FL/src/FL/http/http.i: lzc/backup/FL/src/FL/http/http.cpp.i
@@ -1271,23 +1020,7 @@ lzc/backup/FL/src/FL/http/http.i: lzc/backup/FL/src/FL/http/http.cpp.i
 
 # target to preprocess a source file
 lzc/backup/FL/src/FL/http/http.cpp.i:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/http/http.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/http/http.cpp.i
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/http/http.cpp.i
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/http/http.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/http/http.cpp.i
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/http/http.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/http/http.cpp.i
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http.cpp.i
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/http/http.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/http/http.cpp.i
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http.cpp.i
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/http/http.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/http/http.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/http/http.cpp.i
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/http/http.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/http/http.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http.cpp.i
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http.cpp.i
 .PHONY : lzc/backup/FL/src/FL/http/http.cpp.i
 
 lzc/backup/FL/src/FL/http/http.s: lzc/backup/FL/src/FL/http/http.cpp.s
@@ -1296,23 +1029,7 @@ lzc/backup/FL/src/FL/http/http.s: lzc/backup/FL/src/FL/http/http.cpp.s
 
 # target to generate assembly for a file
 lzc/backup/FL/src/FL/http/http.cpp.s:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/http/http.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/http/http.cpp.s
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/http/http.cpp.s
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/http/http.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/http/http.cpp.s
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/http/http.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/http/http.cpp.s
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http.cpp.s
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/http/http.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/http/http.cpp.s
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http.cpp.s
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/http/http.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/http/http.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/http/http.cpp.s
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/http/http.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/http/http.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http.cpp.s
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http.cpp.s
 .PHONY : lzc/backup/FL/src/FL/http/http.cpp.s
 
 lzc/backup/FL/src/FL/http/http11_parser.o: lzc/backup/FL/src/FL/http/http11_parser.cpp.o
@@ -1321,23 +1038,7 @@ lzc/backup/FL/src/FL/http/http11_parser.o: lzc/backup/FL/src/FL/http/http11_pars
 
 # target to build an object file
 lzc/backup/FL/src/FL/http/http11_parser.cpp.o:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.o
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.o
 .PHONY : lzc/backup/FL/src/FL/http/http11_parser.cpp.o
 
 lzc/backup/FL/src/FL/http/http11_parser.i: lzc/backup/FL/src/FL/http/http11_parser.cpp.i
@@ -1346,23 +1047,7 @@ lzc/backup/FL/src/FL/http/http11_parser.i: lzc/backup/FL/src/FL/http/http11_pars
 
 # target to preprocess a source file
 lzc/backup/FL/src/FL/http/http11_parser.cpp.i:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.i
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.i
 .PHONY : lzc/backup/FL/src/FL/http/http11_parser.cpp.i
 
 lzc/backup/FL/src/FL/http/http11_parser.s: lzc/backup/FL/src/FL/http/http11_parser.cpp.s
@@ -1371,23 +1056,7 @@ lzc/backup/FL/src/FL/http/http11_parser.s: lzc/backup/FL/src/FL/http/http11_pars
 
 # target to generate assembly for a file
 lzc/backup/FL/src/FL/http/http11_parser.cpp.s:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.s
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http11_parser.cpp.s
 .PHONY : lzc/backup/FL/src/FL/http/http11_parser.cpp.s
 
 lzc/backup/FL/src/FL/http/http_connection.o: lzc/backup/FL/src/FL/http/http_connection.cpp.o
@@ -1396,23 +1065,7 @@ lzc/backup/FL/src/FL/http/http_connection.o: lzc/backup/FL/src/FL/http/http_conn
 
 # target to build an object file
 lzc/backup/FL/src/FL/http/http_connection.cpp.o:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o
 .PHONY : lzc/backup/FL/src/FL/http/http_connection.cpp.o
 
 lzc/backup/FL/src/FL/http/http_connection.i: lzc/backup/FL/src/FL/http/http_connection.cpp.i
@@ -1421,23 +1074,7 @@ lzc/backup/FL/src/FL/http/http_connection.i: lzc/backup/FL/src/FL/http/http_conn
 
 # target to preprocess a source file
 lzc/backup/FL/src/FL/http/http_connection.cpp.i:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.i
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.i
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.i
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.i
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.i
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.i
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.i
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.i
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.i
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.i
 .PHONY : lzc/backup/FL/src/FL/http/http_connection.cpp.i
 
 lzc/backup/FL/src/FL/http/http_connection.s: lzc/backup/FL/src/FL/http/http_connection.cpp.s
@@ -1446,23 +1083,7 @@ lzc/backup/FL/src/FL/http/http_connection.s: lzc/backup/FL/src/FL/http/http_conn
 
 # target to generate assembly for a file
 lzc/backup/FL/src/FL/http/http_connection.cpp.s:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.s
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.s
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.s
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.s
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.s
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.s
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.s
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.s
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.s
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.s
 .PHONY : lzc/backup/FL/src/FL/http/http_connection.cpp.s
 
 lzc/backup/FL/src/FL/http/http_parser.o: lzc/backup/FL/src/FL/http/http_parser.cpp.o
@@ -1471,23 +1092,7 @@ lzc/backup/FL/src/FL/http/http_parser.o: lzc/backup/FL/src/FL/http/http_parser.c
 
 # target to build an object file
 lzc/backup/FL/src/FL/http/http_parser.cpp.o:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o
 .PHONY : lzc/backup/FL/src/FL/http/http_parser.cpp.o
 
 lzc/backup/FL/src/FL/http/http_parser.i: lzc/backup/FL/src/FL/http/http_parser.cpp.i
@@ -1496,23 +1101,7 @@ lzc/backup/FL/src/FL/http/http_parser.i: lzc/backup/FL/src/FL/http/http_parser.c
 
 # target to preprocess a source file
 lzc/backup/FL/src/FL/http/http_parser.cpp.i:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.i
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.i
 .PHONY : lzc/backup/FL/src/FL/http/http_parser.cpp.i
 
 lzc/backup/FL/src/FL/http/http_parser.s: lzc/backup/FL/src/FL/http/http_parser.cpp.s
@@ -1521,23 +1110,7 @@ lzc/backup/FL/src/FL/http/http_parser.s: lzc/backup/FL/src/FL/http/http_parser.c
 
 # target to generate assembly for a file
 lzc/backup/FL/src/FL/http/http_parser.cpp.s:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.s
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.s
 .PHONY : lzc/backup/FL/src/FL/http/http_parser.cpp.s
 
 lzc/backup/FL/src/FL/http/http_server.o: lzc/backup/FL/src/FL/http/http_server.cpp.o
@@ -1546,23 +1119,7 @@ lzc/backup/FL/src/FL/http/http_server.o: lzc/backup/FL/src/FL/http/http_server.c
 
 # target to build an object file
 lzc/backup/FL/src/FL/http/http_server.cpp.o:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_server.cpp.o
 .PHONY : lzc/backup/FL/src/FL/http/http_server.cpp.o
 
 lzc/backup/FL/src/FL/http/http_server.i: lzc/backup/FL/src/FL/http/http_server.cpp.i
@@ -1571,23 +1128,7 @@ lzc/backup/FL/src/FL/http/http_server.i: lzc/backup/FL/src/FL/http/http_server.c
 
 # target to preprocess a source file
 lzc/backup/FL/src/FL/http/http_server.cpp.i:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/http/http_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/http/http_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/http/http_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/http/http_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/http/http_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/http/http_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/http/http_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/http/http_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/http/http_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/http/http_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/http/http_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/http/http_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/http/http_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/http/http_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_server.cpp.i
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_server.cpp.i
 .PHONY : lzc/backup/FL/src/FL/http/http_server.cpp.i
 
 lzc/backup/FL/src/FL/http/http_server.s: lzc/backup/FL/src/FL/http/http_server.cpp.s
@@ -1596,23 +1137,7 @@ lzc/backup/FL/src/FL/http/http_server.s: lzc/backup/FL/src/FL/http/http_server.c
 
 # target to generate assembly for a file
 lzc/backup/FL/src/FL/http/http_server.cpp.s:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/http/http_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/http/http_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/http/http_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/http/http_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/http/http_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/http/http_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/http/http_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/http/http_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/http/http_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/http/http_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/http/http_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/http/http_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/http/http_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/http/http_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_server.cpp.s
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_server.cpp.s
 .PHONY : lzc/backup/FL/src/FL/http/http_server.cpp.s
 
 lzc/backup/FL/src/FL/http/http_servlet.o: lzc/backup/FL/src/FL/http/http_servlet.cpp.o
@@ -1621,23 +1146,7 @@ lzc/backup/FL/src/FL/http/http_servlet.o: lzc/backup/FL/src/FL/http/http_servlet
 
 # target to build an object file
 lzc/backup/FL/src/FL/http/http_servlet.cpp.o:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.o
 .PHONY : lzc/backup/FL/src/FL/http/http_servlet.cpp.o
 
 lzc/backup/FL/src/FL/http/http_servlet.i: lzc/backup/FL/src/FL/http/http_servlet.cpp.i
@@ -1646,23 +1155,7 @@ lzc/backup/FL/src/FL/http/http_servlet.i: lzc/backup/FL/src/FL/http/http_servlet
 
 # target to preprocess a source file
 lzc/backup/FL/src/FL/http/http_servlet.cpp.i:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.i
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.i
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.i
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.i
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.i
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.i
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.i
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.i
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.i
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.i
 .PHONY : lzc/backup/FL/src/FL/http/http_servlet.cpp.i
 
 lzc/backup/FL/src/FL/http/http_servlet.s: lzc/backup/FL/src/FL/http/http_servlet.cpp.s
@@ -1671,23 +1164,7 @@ lzc/backup/FL/src/FL/http/http_servlet.s: lzc/backup/FL/src/FL/http/http_servlet
 
 # target to generate assembly for a file
 lzc/backup/FL/src/FL/http/http_servlet.cpp.s:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.s
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.s
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.s
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.s
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.s
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.s
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.s
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.s
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.s
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_servlet.cpp.s
 .PHONY : lzc/backup/FL/src/FL/http/http_servlet.cpp.s
 
 lzc/backup/FL/src/FL/http/http_session.o: lzc/backup/FL/src/FL/http/http_session.cpp.o
@@ -1696,23 +1173,7 @@ lzc/backup/FL/src/FL/http/http_session.o: lzc/backup/FL/src/FL/http/http_session
 
 # target to build an object file
 lzc/backup/FL/src/FL/http/http_session.cpp.o:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_session.cpp.o
 .PHONY : lzc/backup/FL/src/FL/http/http_session.cpp.o
 
 lzc/backup/FL/src/FL/http/http_session.i: lzc/backup/FL/src/FL/http/http_session.cpp.i
@@ -1721,23 +1182,7 @@ lzc/backup/FL/src/FL/http/http_session.i: lzc/backup/FL/src/FL/http/http_session
 
 # target to preprocess a source file
 lzc/backup/FL/src/FL/http/http_session.cpp.i:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/http/http_session.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/http/http_session.cpp.i
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/http/http_session.cpp.i
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/http/http_session.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/http/http_session.cpp.i
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/http/http_session.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/http/http_session.cpp.i
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_session.cpp.i
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/http/http_session.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/http/http_session.cpp.i
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_session.cpp.i
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/http/http_session.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/http/http_session.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/http/http_session.cpp.i
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/http/http_session.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/http/http_session.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_session.cpp.i
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_session.cpp.i
 .PHONY : lzc/backup/FL/src/FL/http/http_session.cpp.i
 
 lzc/backup/FL/src/FL/http/http_session.s: lzc/backup/FL/src/FL/http/http_session.cpp.s
@@ -1746,23 +1191,7 @@ lzc/backup/FL/src/FL/http/http_session.s: lzc/backup/FL/src/FL/http/http_session
 
 # target to generate assembly for a file
 lzc/backup/FL/src/FL/http/http_session.cpp.s:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/http/http_session.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/http/http_session.cpp.s
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/http/http_session.cpp.s
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/http/http_session.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/http/http_session.cpp.s
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/http/http_session.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/http/http_session.cpp.s
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/http_session.cpp.s
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/http/http_session.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/http/http_session.cpp.s
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/http_session.cpp.s
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/http/http_session.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/http/http_session.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/http/http_session.cpp.s
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/http/http_session.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/http/http_session.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/http_session.cpp.s
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_session.cpp.s
 .PHONY : lzc/backup/FL/src/FL/http/http_session.cpp.s
 
 lzc/backup/FL/src/FL/http/httpclient_parser.o: lzc/backup/FL/src/FL/http/httpclient_parser.cpp.o
@@ -1771,23 +1200,7 @@ lzc/backup/FL/src/FL/http/httpclient_parser.o: lzc/backup/FL/src/FL/http/httpcli
 
 # target to build an object file
 lzc/backup/FL/src/FL/http/httpclient_parser.cpp.o:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.o
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.o
 .PHONY : lzc/backup/FL/src/FL/http/httpclient_parser.cpp.o
 
 lzc/backup/FL/src/FL/http/httpclient_parser.i: lzc/backup/FL/src/FL/http/httpclient_parser.cpp.i
@@ -1796,23 +1209,7 @@ lzc/backup/FL/src/FL/http/httpclient_parser.i: lzc/backup/FL/src/FL/http/httpcli
 
 # target to preprocess a source file
 lzc/backup/FL/src/FL/http/httpclient_parser.cpp.i:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.i
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.i
 .PHONY : lzc/backup/FL/src/FL/http/httpclient_parser.cpp.i
 
 lzc/backup/FL/src/FL/http/httpclient_parser.s: lzc/backup/FL/src/FL/http/httpclient_parser.cpp.s
@@ -1821,23 +1218,7 @@ lzc/backup/FL/src/FL/http/httpclient_parser.s: lzc/backup/FL/src/FL/http/httpcli
 
 # target to generate assembly for a file
 lzc/backup/FL/src/FL/http/httpclient_parser.cpp.s:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.s
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/httpclient_parser.cpp.s
 .PHONY : lzc/backup/FL/src/FL/http/httpclient_parser.cpp.s
 
 lzc/backup/FL/src/FL/iomanager.o: lzc/backup/FL/src/FL/iomanager.cpp.o
@@ -1846,23 +1227,7 @@ lzc/backup/FL/src/FL/iomanager.o: lzc/backup/FL/src/FL/iomanager.cpp.o
 
 # target to build an object file
 lzc/backup/FL/src/FL/iomanager.cpp.o:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/iomanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/iomanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/iomanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/iomanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/iomanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/iomanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/iomanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/iomanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/iomanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/iomanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/iomanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/iomanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/iomanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/iomanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/iomanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/iomanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/iomanager.cpp.o
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/iomanager.cpp.o
 .PHONY : lzc/backup/FL/src/FL/iomanager.cpp.o
 
 lzc/backup/FL/src/FL/iomanager.i: lzc/backup/FL/src/FL/iomanager.cpp.i
@@ -1871,23 +1236,7 @@ lzc/backup/FL/src/FL/iomanager.i: lzc/backup/FL/src/FL/iomanager.cpp.i
 
 # target to preprocess a source file
 lzc/backup/FL/src/FL/iomanager.cpp.i:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/iomanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/iomanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/iomanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/iomanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/iomanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/iomanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/iomanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/iomanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/iomanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/iomanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/iomanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/iomanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/iomanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/iomanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/iomanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/iomanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/iomanager.cpp.i
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/iomanager.cpp.i
 .PHONY : lzc/backup/FL/src/FL/iomanager.cpp.i
 
 lzc/backup/FL/src/FL/iomanager.s: lzc/backup/FL/src/FL/iomanager.cpp.s
@@ -1896,23 +1245,7 @@ lzc/backup/FL/src/FL/iomanager.s: lzc/backup/FL/src/FL/iomanager.cpp.s
 
 # target to generate assembly for a file
 lzc/backup/FL/src/FL/iomanager.cpp.s:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/iomanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/iomanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/iomanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/iomanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/iomanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/iomanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/iomanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/iomanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/iomanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/iomanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/iomanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/iomanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/iomanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/iomanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/iomanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/iomanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/iomanager.cpp.s
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/iomanager.cpp.s
 .PHONY : lzc/backup/FL/src/FL/iomanager.cpp.s
 
 lzc/backup/FL/src/FL/log.o: lzc/backup/FL/src/FL/log.cpp.o
@@ -1921,23 +1254,7 @@ lzc/backup/FL/src/FL/log.o: lzc/backup/FL/src/FL/log.cpp.o
 
 # target to build an object file
 lzc/backup/FL/src/FL/log.cpp.o:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/log.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/log.cpp.o
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/log.cpp.o
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/log.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/log.cpp.o
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/log.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/log.cpp.o
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/log.cpp.o
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/log.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/log.cpp.o
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/log.cpp.o
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/log.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/log.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/log.cpp.o
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/log.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/log.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/log.cpp.o
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/log.cpp.o
 .PHONY : lzc/backup/FL/src/FL/log.cpp.o
 
 lzc/backup/FL/src/FL/log.i: lzc/backup/FL/src/FL/log.cpp.i
@@ -1946,23 +1263,7 @@ lzc/backup/FL/src/FL/log.i: lzc/backup/FL/src/FL/log.cpp.i
 
 # target to preprocess a source file
 lzc/backup/FL/src/FL/log.cpp.i:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/log.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/log.cpp.i
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/log.cpp.i
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/log.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/log.cpp.i
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/log.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/log.cpp.i
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/log.cpp.i
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/log.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/log.cpp.i
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/log.cpp.i
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/log.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/log.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/log.cpp.i
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/log.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/log.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/log.cpp.i
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/log.cpp.i
 .PHONY : lzc/backup/FL/src/FL/log.cpp.i
 
 lzc/backup/FL/src/FL/log.s: lzc/backup/FL/src/FL/log.cpp.s
@@ -1971,23 +1272,7 @@ lzc/backup/FL/src/FL/log.s: lzc/backup/FL/src/FL/log.cpp.s
 
 # target to generate assembly for a file
 lzc/backup/FL/src/FL/log.cpp.s:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/log.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/log.cpp.s
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/log.cpp.s
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/log.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/log.cpp.s
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/log.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/log.cpp.s
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/log.cpp.s
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/log.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/log.cpp.s
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/log.cpp.s
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/log.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/log.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/log.cpp.s
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/log.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/log.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/log.cpp.s
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/log.cpp.s
 .PHONY : lzc/backup/FL/src/FL/log.cpp.s
 
 lzc/backup/FL/src/FL/logmanager.o: lzc/backup/FL/src/FL/logmanager.cpp.o
@@ -1996,23 +1281,7 @@ lzc/backup/FL/src/FL/logmanager.o: lzc/backup/FL/src/FL/logmanager.cpp.o
 
 # target to build an object file
 lzc/backup/FL/src/FL/logmanager.cpp.o:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/logmanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/logmanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/logmanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/logmanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/logmanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/logmanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/logmanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/logmanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/logmanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/logmanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/logmanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/logmanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/logmanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/logmanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/logmanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/logmanager.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/logmanager.cpp.o
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/logmanager.cpp.o
 .PHONY : lzc/backup/FL/src/FL/logmanager.cpp.o
 
 lzc/backup/FL/src/FL/logmanager.i: lzc/backup/FL/src/FL/logmanager.cpp.i
@@ -2021,23 +1290,7 @@ lzc/backup/FL/src/FL/logmanager.i: lzc/backup/FL/src/FL/logmanager.cpp.i
 
 # target to preprocess a source file
 lzc/backup/FL/src/FL/logmanager.cpp.i:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/logmanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/logmanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/logmanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/logmanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/logmanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/logmanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/logmanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/logmanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/logmanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/logmanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/logmanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/logmanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/logmanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/logmanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/logmanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/logmanager.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/logmanager.cpp.i
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/logmanager.cpp.i
 .PHONY : lzc/backup/FL/src/FL/logmanager.cpp.i
 
 lzc/backup/FL/src/FL/logmanager.s: lzc/backup/FL/src/FL/logmanager.cpp.s
@@ -2046,23 +1299,7 @@ lzc/backup/FL/src/FL/logmanager.s: lzc/backup/FL/src/FL/logmanager.cpp.s
 
 # target to generate assembly for a file
 lzc/backup/FL/src/FL/logmanager.cpp.s:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/logmanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/logmanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/logmanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/logmanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/logmanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/logmanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/logmanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/logmanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/logmanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/logmanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/logmanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/logmanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/logmanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/logmanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/logmanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/logmanager.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/logmanager.cpp.s
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/logmanager.cpp.s
 .PHONY : lzc/backup/FL/src/FL/logmanager.cpp.s
 
 lzc/backup/FL/src/FL/scheduler.o: lzc/backup/FL/src/FL/scheduler.cpp.o
@@ -2071,23 +1308,7 @@ lzc/backup/FL/src/FL/scheduler.o: lzc/backup/FL/src/FL/scheduler.cpp.o
 
 # target to build an object file
 lzc/backup/FL/src/FL/scheduler.cpp.o:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/scheduler.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/scheduler.cpp.o
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/scheduler.cpp.o
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/scheduler.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/scheduler.cpp.o
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/scheduler.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/scheduler.cpp.o
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/scheduler.cpp.o
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/scheduler.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/scheduler.cpp.o
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/scheduler.cpp.o
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/scheduler.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/scheduler.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/scheduler.cpp.o
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/scheduler.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/scheduler.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/scheduler.cpp.o
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/scheduler.cpp.o
 .PHONY : lzc/backup/FL/src/FL/scheduler.cpp.o
 
 lzc/backup/FL/src/FL/scheduler.i: lzc/backup/FL/src/FL/scheduler.cpp.i
@@ -2096,23 +1317,7 @@ lzc/backup/FL/src/FL/scheduler.i: lzc/backup/FL/src/FL/scheduler.cpp.i
 
 # target to preprocess a source file
 lzc/backup/FL/src/FL/scheduler.cpp.i:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/scheduler.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/scheduler.cpp.i
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/scheduler.cpp.i
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/scheduler.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/scheduler.cpp.i
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/scheduler.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/scheduler.cpp.i
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/scheduler.cpp.i
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/scheduler.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/scheduler.cpp.i
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/scheduler.cpp.i
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/scheduler.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/scheduler.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/scheduler.cpp.i
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/scheduler.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/scheduler.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/scheduler.cpp.i
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/scheduler.cpp.i
 .PHONY : lzc/backup/FL/src/FL/scheduler.cpp.i
 
 lzc/backup/FL/src/FL/scheduler.s: lzc/backup/FL/src/FL/scheduler.cpp.s
@@ -2121,23 +1326,7 @@ lzc/backup/FL/src/FL/scheduler.s: lzc/backup/FL/src/FL/scheduler.cpp.s
 
 # target to generate assembly for a file
 lzc/backup/FL/src/FL/scheduler.cpp.s:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/scheduler.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/scheduler.cpp.s
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/scheduler.cpp.s
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/scheduler.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/scheduler.cpp.s
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/scheduler.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/scheduler.cpp.s
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/scheduler.cpp.s
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/scheduler.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/scheduler.cpp.s
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/scheduler.cpp.s
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/scheduler.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/scheduler.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/scheduler.cpp.s
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/scheduler.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/scheduler.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/scheduler.cpp.s
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/scheduler.cpp.s
 .PHONY : lzc/backup/FL/src/FL/scheduler.cpp.s
 
 lzc/backup/FL/src/FL/socket.o: lzc/backup/FL/src/FL/socket.cpp.o
@@ -2146,23 +1335,7 @@ lzc/backup/FL/src/FL/socket.o: lzc/backup/FL/src/FL/socket.cpp.o
 
 # target to build an object file
 lzc/backup/FL/src/FL/socket.cpp.o:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/socket.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/socket.cpp.o
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/socket.cpp.o
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/socket.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/socket.cpp.o
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/socket.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/socket.cpp.o
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/socket.cpp.o
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/socket.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/socket.cpp.o
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/socket.cpp.o
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/socket.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/socket.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/socket.cpp.o
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/socket.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/socket.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/socket.cpp.o
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/socket.cpp.o
 .PHONY : lzc/backup/FL/src/FL/socket.cpp.o
 
 lzc/backup/FL/src/FL/socket.i: lzc/backup/FL/src/FL/socket.cpp.i
@@ -2171,23 +1344,7 @@ lzc/backup/FL/src/FL/socket.i: lzc/backup/FL/src/FL/socket.cpp.i
 
 # target to preprocess a source file
 lzc/backup/FL/src/FL/socket.cpp.i:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/socket.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/socket.cpp.i
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/socket.cpp.i
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/socket.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/socket.cpp.i
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/socket.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/socket.cpp.i
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/socket.cpp.i
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/socket.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/socket.cpp.i
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/socket.cpp.i
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/socket.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/socket.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/socket.cpp.i
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/socket.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/socket.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/socket.cpp.i
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/socket.cpp.i
 .PHONY : lzc/backup/FL/src/FL/socket.cpp.i
 
 lzc/backup/FL/src/FL/socket.s: lzc/backup/FL/src/FL/socket.cpp.s
@@ -2196,23 +1353,7 @@ lzc/backup/FL/src/FL/socket.s: lzc/backup/FL/src/FL/socket.cpp.s
 
 # target to generate assembly for a file
 lzc/backup/FL/src/FL/socket.cpp.s:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/socket.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/socket.cpp.s
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/socket.cpp.s
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/socket.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/socket.cpp.s
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/socket.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/socket.cpp.s
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/socket.cpp.s
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/socket.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/socket.cpp.s
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/socket.cpp.s
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/socket.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/socket.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/socket.cpp.s
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/socket.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/socket.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/socket.cpp.s
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/socket.cpp.s
 .PHONY : lzc/backup/FL/src/FL/socket.cpp.s
 
 lzc/backup/FL/src/FL/socket_stream.o: lzc/backup/FL/src/FL/socket_stream.cpp.o
@@ -2221,23 +1362,7 @@ lzc/backup/FL/src/FL/socket_stream.o: lzc/backup/FL/src/FL/socket_stream.cpp.o
 
 # target to build an object file
 lzc/backup/FL/src/FL/socket_stream.cpp.o:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/socket_stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/socket_stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/socket_stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/socket_stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/socket_stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/socket_stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/socket_stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/socket_stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/socket_stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/socket_stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/socket_stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/socket_stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/socket_stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/socket_stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/socket_stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/socket_stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/socket_stream.cpp.o
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/socket_stream.cpp.o
 .PHONY : lzc/backup/FL/src/FL/socket_stream.cpp.o
 
 lzc/backup/FL/src/FL/socket_stream.i: lzc/backup/FL/src/FL/socket_stream.cpp.i
@@ -2246,23 +1371,7 @@ lzc/backup/FL/src/FL/socket_stream.i: lzc/backup/FL/src/FL/socket_stream.cpp.i
 
 # target to preprocess a source file
 lzc/backup/FL/src/FL/socket_stream.cpp.i:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/socket_stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/socket_stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/socket_stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/socket_stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/socket_stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/socket_stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/socket_stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/socket_stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/socket_stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/socket_stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/socket_stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/socket_stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/socket_stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/socket_stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/socket_stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/socket_stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/socket_stream.cpp.i
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/socket_stream.cpp.i
 .PHONY : lzc/backup/FL/src/FL/socket_stream.cpp.i
 
 lzc/backup/FL/src/FL/socket_stream.s: lzc/backup/FL/src/FL/socket_stream.cpp.s
@@ -2271,23 +1380,7 @@ lzc/backup/FL/src/FL/socket_stream.s: lzc/backup/FL/src/FL/socket_stream.cpp.s
 
 # target to generate assembly for a file
 lzc/backup/FL/src/FL/socket_stream.cpp.s:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/socket_stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/socket_stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/socket_stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/socket_stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/socket_stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/socket_stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/socket_stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/socket_stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/socket_stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/socket_stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/socket_stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/socket_stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/socket_stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/socket_stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/socket_stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/socket_stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/socket_stream.cpp.s
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/socket_stream.cpp.s
 .PHONY : lzc/backup/FL/src/FL/socket_stream.cpp.s
 
 lzc/backup/FL/src/FL/stream.o: lzc/backup/FL/src/FL/stream.cpp.o
@@ -2296,23 +1389,7 @@ lzc/backup/FL/src/FL/stream.o: lzc/backup/FL/src/FL/stream.cpp.o
 
 # target to build an object file
 lzc/backup/FL/src/FL/stream.cpp.o:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/stream.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/stream.cpp.o
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/stream.cpp.o
 .PHONY : lzc/backup/FL/src/FL/stream.cpp.o
 
 lzc/backup/FL/src/FL/stream.i: lzc/backup/FL/src/FL/stream.cpp.i
@@ -2321,23 +1398,7 @@ lzc/backup/FL/src/FL/stream.i: lzc/backup/FL/src/FL/stream.cpp.i
 
 # target to preprocess a source file
 lzc/backup/FL/src/FL/stream.cpp.i:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/stream.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/stream.cpp.i
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/stream.cpp.i
 .PHONY : lzc/backup/FL/src/FL/stream.cpp.i
 
 lzc/backup/FL/src/FL/stream.s: lzc/backup/FL/src/FL/stream.cpp.s
@@ -2346,23 +1407,7 @@ lzc/backup/FL/src/FL/stream.s: lzc/backup/FL/src/FL/stream.cpp.s
 
 # target to generate assembly for a file
 lzc/backup/FL/src/FL/stream.cpp.s:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/stream.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/stream.cpp.s
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/stream.cpp.s
 .PHONY : lzc/backup/FL/src/FL/stream.cpp.s
 
 lzc/backup/FL/src/FL/tcp_server.o: lzc/backup/FL/src/FL/tcp_server.cpp.o
@@ -2371,23 +1416,7 @@ lzc/backup/FL/src/FL/tcp_server.o: lzc/backup/FL/src/FL/tcp_server.cpp.o
 
 # target to build an object file
 lzc/backup/FL/src/FL/tcp_server.cpp.o:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/tcp_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/tcp_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/tcp_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/tcp_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/tcp_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/tcp_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/tcp_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/tcp_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/tcp_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/tcp_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/tcp_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/tcp_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/tcp_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/tcp_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/tcp_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/tcp_server.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/tcp_server.cpp.o
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/tcp_server.cpp.o
 .PHONY : lzc/backup/FL/src/FL/tcp_server.cpp.o
 
 lzc/backup/FL/src/FL/tcp_server.i: lzc/backup/FL/src/FL/tcp_server.cpp.i
@@ -2396,23 +1425,7 @@ lzc/backup/FL/src/FL/tcp_server.i: lzc/backup/FL/src/FL/tcp_server.cpp.i
 
 # target to preprocess a source file
 lzc/backup/FL/src/FL/tcp_server.cpp.i:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/tcp_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/tcp_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/tcp_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/tcp_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/tcp_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/tcp_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/tcp_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/tcp_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/tcp_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/tcp_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/tcp_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/tcp_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/tcp_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/tcp_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/tcp_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/tcp_server.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/tcp_server.cpp.i
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/tcp_server.cpp.i
 .PHONY : lzc/backup/FL/src/FL/tcp_server.cpp.i
 
 lzc/backup/FL/src/FL/tcp_server.s: lzc/backup/FL/src/FL/tcp_server.cpp.s
@@ -2421,23 +1434,7 @@ lzc/backup/FL/src/FL/tcp_server.s: lzc/backup/FL/src/FL/tcp_server.cpp.s
 
 # target to generate assembly for a file
 lzc/backup/FL/src/FL/tcp_server.cpp.s:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/tcp_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/tcp_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/tcp_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/tcp_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/tcp_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/tcp_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/tcp_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/tcp_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/tcp_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/tcp_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/tcp_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/tcp_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/tcp_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/tcp_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/tcp_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/tcp_server.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/tcp_server.cpp.s
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/tcp_server.cpp.s
 .PHONY : lzc/backup/FL/src/FL/tcp_server.cpp.s
 
 lzc/backup/FL/src/FL/thread.o: lzc/backup/FL/src/FL/thread.cpp.o
@@ -2446,23 +1443,7 @@ lzc/backup/FL/src/FL/thread.o: lzc/backup/FL/src/FL/thread.cpp.o
 
 # target to build an object file
 lzc/backup/FL/src/FL/thread.cpp.o:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/thread.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/thread.cpp.o
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/thread.cpp.o
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/thread.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/thread.cpp.o
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/thread.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/thread.cpp.o
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/thread.cpp.o
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/thread.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/thread.cpp.o
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/thread.cpp.o
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/thread.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/thread.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/thread.cpp.o
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/thread.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/thread.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/thread.cpp.o
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/thread.cpp.o
 .PHONY : lzc/backup/FL/src/FL/thread.cpp.o
 
 lzc/backup/FL/src/FL/thread.i: lzc/backup/FL/src/FL/thread.cpp.i
@@ -2471,23 +1452,7 @@ lzc/backup/FL/src/FL/thread.i: lzc/backup/FL/src/FL/thread.cpp.i
 
 # target to preprocess a source file
 lzc/backup/FL/src/FL/thread.cpp.i:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/thread.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/thread.cpp.i
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/thread.cpp.i
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/thread.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/thread.cpp.i
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/thread.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/thread.cpp.i
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/thread.cpp.i
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/thread.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/thread.cpp.i
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/thread.cpp.i
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/thread.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/thread.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/thread.cpp.i
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/thread.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/thread.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/thread.cpp.i
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/thread.cpp.i
 .PHONY : lzc/backup/FL/src/FL/thread.cpp.i
 
 lzc/backup/FL/src/FL/thread.s: lzc/backup/FL/src/FL/thread.cpp.s
@@ -2496,23 +1461,7 @@ lzc/backup/FL/src/FL/thread.s: lzc/backup/FL/src/FL/thread.cpp.s
 
 # target to generate assembly for a file
 lzc/backup/FL/src/FL/thread.cpp.s:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/thread.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/thread.cpp.s
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/thread.cpp.s
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/thread.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/thread.cpp.s
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/thread.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/thread.cpp.s
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/thread.cpp.s
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/thread.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/thread.cpp.s
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/thread.cpp.s
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/thread.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/thread.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/thread.cpp.s
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/thread.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/thread.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/thread.cpp.s
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/thread.cpp.s
 .PHONY : lzc/backup/FL/src/FL/thread.cpp.s
 
 lzc/backup/FL/src/FL/timer.o: lzc/backup/FL/src/FL/timer.cpp.o
@@ -2521,23 +1470,7 @@ lzc/backup/FL/src/FL/timer.o: lzc/backup/FL/src/FL/timer.cpp.o
 
 # target to build an object file
 lzc/backup/FL/src/FL/timer.cpp.o:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/timer.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/timer.cpp.o
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/timer.cpp.o
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/timer.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/timer.cpp.o
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/timer.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/timer.cpp.o
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/timer.cpp.o
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/timer.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/timer.cpp.o
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/timer.cpp.o
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/timer.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/timer.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/timer.cpp.o
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/timer.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/timer.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/timer.cpp.o
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/timer.cpp.o
 .PHONY : lzc/backup/FL/src/FL/timer.cpp.o
 
 lzc/backup/FL/src/FL/timer.i: lzc/backup/FL/src/FL/timer.cpp.i
@@ -2546,23 +1479,7 @@ lzc/backup/FL/src/FL/timer.i: lzc/backup/FL/src/FL/timer.cpp.i
 
 # target to preprocess a source file
 lzc/backup/FL/src/FL/timer.cpp.i:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/timer.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/timer.cpp.i
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/timer.cpp.i
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/timer.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/timer.cpp.i
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/timer.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/timer.cpp.i
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/timer.cpp.i
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/timer.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/timer.cpp.i
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/timer.cpp.i
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/timer.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/timer.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/timer.cpp.i
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/timer.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/timer.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/timer.cpp.i
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/timer.cpp.i
 .PHONY : lzc/backup/FL/src/FL/timer.cpp.i
 
 lzc/backup/FL/src/FL/timer.s: lzc/backup/FL/src/FL/timer.cpp.s
@@ -2571,24 +1488,35 @@ lzc/backup/FL/src/FL/timer.s: lzc/backup/FL/src/FL/timer.cpp.s
 
 # target to generate assembly for a file
 lzc/backup/FL/src/FL/timer.cpp.s:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/timer.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/timer.cpp.s
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/timer.cpp.s
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/timer.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/timer.cpp.s
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/timer.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/timer.cpp.s
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/timer.cpp.s
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/timer.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/timer.cpp.s
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/timer.cpp.s
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/timer.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/timer.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/timer.cpp.s
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/timer.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/timer.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/timer.cpp.s
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/timer.cpp.s
 .PHONY : lzc/backup/FL/src/FL/timer.cpp.s
+
+lzc/backup/FL/src/FL/uri.o: lzc/backup/FL/src/FL/uri.cpp.o
+
+.PHONY : lzc/backup/FL/src/FL/uri.o
+
+# target to build an object file
+lzc/backup/FL/src/FL/uri.cpp.o:
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/uri.cpp.o
+.PHONY : lzc/backup/FL/src/FL/uri.cpp.o
+
+lzc/backup/FL/src/FL/uri.i: lzc/backup/FL/src/FL/uri.cpp.i
+
+.PHONY : lzc/backup/FL/src/FL/uri.i
+
+# target to preprocess a source file
+lzc/backup/FL/src/FL/uri.cpp.i:
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/uri.cpp.i
+.PHONY : lzc/backup/FL/src/FL/uri.cpp.i
+
+lzc/backup/FL/src/FL/uri.s: lzc/backup/FL/src/FL/uri.cpp.s
+
+.PHONY : lzc/backup/FL/src/FL/uri.s
+
+# target to generate assembly for a file
+lzc/backup/FL/src/FL/uri.cpp.s:
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/uri.cpp.s
+.PHONY : lzc/backup/FL/src/FL/uri.cpp.s
 
 lzc/backup/FL/src/FL/util.o: lzc/backup/FL/src/FL/util.cpp.o
 
@@ -2596,23 +1524,7 @@ lzc/backup/FL/src/FL/util.o: lzc/backup/FL/src/FL/util.cpp.o
 
 # target to build an object file
 lzc/backup/FL/src/FL/util.cpp.o:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/util.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/util.cpp.o
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/util.cpp.o
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/util.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/util.cpp.o
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/util.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/util.cpp.o
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/util.cpp.o
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/util.cpp.o
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/util.cpp.o
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/util.cpp.o
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/util.cpp.o
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/util.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/util.cpp.o
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/util.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/util.cpp.o
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/util.cpp.o
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/util.cpp.o
 .PHONY : lzc/backup/FL/src/FL/util.cpp.o
 
 lzc/backup/FL/src/FL/util.i: lzc/backup/FL/src/FL/util.cpp.i
@@ -2621,23 +1533,7 @@ lzc/backup/FL/src/FL/util.i: lzc/backup/FL/src/FL/util.cpp.i
 
 # target to preprocess a source file
 lzc/backup/FL/src/FL/util.cpp.i:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/util.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/util.cpp.i
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/util.cpp.i
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/util.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/util.cpp.i
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/util.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/util.cpp.i
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/util.cpp.i
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/util.cpp.i
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/util.cpp.i
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/util.cpp.i
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/util.cpp.i
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/util.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/util.cpp.i
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/util.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/util.cpp.i
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/util.cpp.i
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/util.cpp.i
 .PHONY : lzc/backup/FL/src/FL/util.cpp.i
 
 lzc/backup/FL/src/FL/util.s: lzc/backup/FL/src/FL/util.cpp.s
@@ -2646,23 +1542,7 @@ lzc/backup/FL/src/FL/util.s: lzc/backup/FL/src/FL/util.cpp.s
 
 # target to generate assembly for a file
 lzc/backup/FL/src/FL/util.cpp.s:
-	$(MAKE) -f CMakeFiles/exampleHttpconnection.dir/build.make CMakeFiles/exampleHttpconnection.dir/lzc/backup/FL/src/FL/util.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpserver.dir/build.make CMakeFiles/exampleHttpserver.dir/lzc/backup/FL/src/FL/util.cpp.s
-	$(MAKE) -f CMakeFiles/exampleLog.dir/build.make CMakeFiles/exampleLog.dir/lzc/backup/FL/src/FL/util.cpp.s
-	$(MAKE) -f CMakeFiles/exampleThread.dir/build.make CMakeFiles/exampleThread.dir/lzc/backup/FL/src/FL/util.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine2.dir/build.make CMakeFiles/exampleCoroutine2.dir/lzc/backup/FL/src/FL/util.cpp.s
-	$(MAKE) -f CMakeFiles/exampleScheduler.dir/build.make CMakeFiles/exampleScheduler.dir/lzc/backup/FL/src/FL/util.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTcpserver.dir/build.make CMakeFiles/exampleTcpserver.dir/lzc/backup/FL/src/FL/util.cpp.s
-	$(MAKE) -f CMakeFiles/exampleSocket.dir/build.make CMakeFiles/exampleSocket.dir/lzc/backup/FL/src/FL/util.cpp.s
-	$(MAKE) -f CMakeFiles/exampleEcho.dir/build.make CMakeFiles/exampleEcho.dir/lzc/backup/FL/src/FL/util.cpp.s
-	$(MAKE) -f CMakeFiles/exampleCoroutine.dir/build.make CMakeFiles/exampleCoroutine.dir/lzc/backup/FL/src/FL/util.cpp.s
-	$(MAKE) -f CMakeFiles/exampleiomanager.dir/build.make CMakeFiles/exampleiomanager.dir/lzc/backup/FL/src/FL/util.cpp.s
-	$(MAKE) -f CMakeFiles/exampleByteArray.dir/build.make CMakeFiles/exampleByteArray.dir/lzc/backup/FL/src/FL/util.cpp.s
-	$(MAKE) -f CMakeFiles/exampleTimer.dir/build.make CMakeFiles/exampleTimer.dir/lzc/backup/FL/src/FL/util.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHook.dir/build.make CMakeFiles/exampleHook.dir/lzc/backup/FL/src/FL/util.cpp.s
-	$(MAKE) -f CMakeFiles/exampleAddress.dir/build.make CMakeFiles/exampleAddress.dir/lzc/backup/FL/src/FL/util.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttpParser.dir/build.make CMakeFiles/exampleHttpParser.dir/lzc/backup/FL/src/FL/util.cpp.s
-	$(MAKE) -f CMakeFiles/exampleHttp.dir/build.make CMakeFiles/exampleHttp.dir/lzc/backup/FL/src/FL/util.cpp.s
+	$(MAKE) -f CMakeFiles/FL.dir/build.make CMakeFiles/FL.dir/lzc/backup/FL/src/FL/util.cpp.s
 .PHONY : lzc/backup/FL/src/FL/util.cpp.s
 
 # Help Target
@@ -2671,8 +1551,13 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... exampleUri"
 	@echo "... exampleHttpconnection"
 	@echo "... exampleHttpserver"
+	@echo "... rebuild_cache"
+	@echo "... edit_cache"
+	@echo "... exampleHttpParser"
+	@echo "... FL"
 	@echo "... exampleLog"
 	@echo "... exampleThread"
 	@echo "... exampleCoroutine2"
@@ -2686,9 +1571,6 @@ help:
 	@echo "... exampleTimer"
 	@echo "... exampleHook"
 	@echo "... exampleAddress"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... exampleHttpParser"
 	@echo "... exampleHttp"
 	@echo "... exampleAddress.o"
 	@echo "... exampleAddress.i"
@@ -2738,6 +1620,9 @@ help:
 	@echo "... exampleTimer.o"
 	@echo "... exampleTimer.i"
 	@echo "... exampleTimer.s"
+	@echo "... exampleUri.o"
+	@echo "... exampleUri.i"
+	@echo "... exampleUri.s"
 	@echo "... exampleiomanager.o"
 	@echo "... exampleiomanager.i"
 	@echo "... exampleiomanager.s"
@@ -2813,6 +1698,9 @@ help:
 	@echo "... lzc/backup/FL/src/FL/timer.o"
 	@echo "... lzc/backup/FL/src/FL/timer.i"
 	@echo "... lzc/backup/FL/src/FL/timer.s"
+	@echo "... lzc/backup/FL/src/FL/uri.o"
+	@echo "... lzc/backup/FL/src/FL/uri.i"
+	@echo "... lzc/backup/FL/src/FL/uri.s"
 	@echo "... lzc/backup/FL/src/FL/util.o"
 	@echo "... lzc/backup/FL/src/FL/util.i"
 	@echo "... lzc/backup/FL/src/FL/util.s"
