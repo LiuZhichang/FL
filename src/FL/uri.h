@@ -23,9 +23,8 @@ class Uri {
     const std::string& getHost() const {
         return m_host;
     }
-    const std::string& getPath() const {
-        return m_path;
-    }
+    const std::string& getPath() const;
+
     const std::string& getQuery() const {
         return m_query;
     }
@@ -73,6 +72,6 @@ class Uri {
     int16_t		m_port;
 };
 
-std::ostream& operator << (std::ostream& os,const Uri& uri);
+std::ostream& operator << (std::ostream& os, const Uri& uri);
 
 }

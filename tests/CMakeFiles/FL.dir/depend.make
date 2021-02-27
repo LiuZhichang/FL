@@ -88,10 +88,16 @@ CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/F
 CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/http/http_connection.h
 CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/http/http_parser.h
 CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/http/httpclient_parser.h
+CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/log.h
+CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/logmanager.h
+CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/mutex.h
 CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/noncopyable.h
+CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/singleton.h
 CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/socket.h
 CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/socket_stream.h
 CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/stream.h
+CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/uri.h
+CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_connection.cpp.o: /lzc/backup/FL/src/FL/util.h
 
 CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o: /lzc/backup/FL/src/FL/config.h
 CMakeFiles/FL.dir/lzc/backup/FL/src/FL/http/http_parser.cpp.o: /lzc/backup/FL/src/FL/http/http.h

@@ -19,5 +19,6 @@ CMakeFiles/exampleHttpconnection.dir/exampleHttpconnection.cpp.o
  /lzc/backup/FL/src/FL/stream.h
  /lzc/backup/FL/src/FL/thread.h
  /lzc/backup/FL/src/FL/timer.h
+ /lzc/backup/FL/src/FL/uri.h
  /lzc/backup/FL/src/FL/util.h
  /lzc/backup/FL/tests/exampleHttpconnection.cpp

@@ -28,3 +28,37 @@
 [2021-02-23 16:26:43]	31756	unknow	4	[ERROR]	[system]	[/lzc/backup/FL/src/FL/tcp_server.cpp:32:bind]	bind failed errno = 13 error info = Permission denied address = [0.0.0.0:80]
 [2021-02-23 16:30:10]	32211	unknow	4	[ERROR]	[system]	[/lzc/backup/FL/src/FL/socket.cpp:361:getLocalAddress]	getpeername error sock = 7 errno = 107 errstr = Transport endpoint is not connected
 [2021-02-23 16:30:20]	32238	unknow	4	[ERROR]	[system]	[/lzc/backup/FL/src/FL/socket.cpp:361:getLocalAddress]	getpeername error sock = 7 errno = 107 errstr = Transport endpoint is not connected
+[2021-02-27 11:34:33]	15375	th	4	[ERROR]	[system]	[/lzc/backup/FL/src/FL/coroutine.cpp:194:MainFunc]	Coroutine Except: basic_string::append coroutine_id=4
+/lzc/backup/FL/tests/libFL.so(_ZN2FL9Coroutine8MainFuncEv+0xa95) [0x7feb3d9d4957]
+/lib/x86_64-linux-gnu/libc.so.6(+0x4cb50) [0x7feb3d21bb50]
+
+[2021-02-27 11:34:39]	15423	th 0	4	[ERROR]	[system]	[/lzc/backup/FL/src/FL/coroutine.cpp:194:MainFunc]	Coroutine Except: basic_string::append coroutine_id=4
+/lzc/backup/FL/tests/libFL.so(_ZN2FL9Coroutine8MainFuncEv+0xa95) [0x7fe88e63e957]
+/lib/x86_64-linux-gnu/libc.so.6(+0x4cb50) [0x7fe88de85b50]
+
+[2021-02-27 11:38:04]	16166	th 0	4	[ERROR]	[system]	[/lzc/backup/FL/src/FL/coroutine.cpp:194:MainFunc]	Coroutine Except: basic_string::append coroutine_id=4
+/lzc/backup/FL/tests/libFL.so(_ZN2FL9Coroutine8MainFuncEv+0xa95) [0x7fc60f2fb957]
+/lib/x86_64-linux-gnu/libc.so.6(+0x4cb50) [0x7fc60eb42b50]
+
+[2021-02-27 11:39:19]	16666	th 0	4	[ERROR]	[system]	[/lzc/backup/FL/src/FL/coroutine.cpp:194:MainFunc]	Coroutine Except: basic_string::append coroutine_id=4
+/lzc/backup/FL/tests/libFL.so(_ZN2FL9Coroutine8MainFuncEv+0xa95) [0x7f1e1f5b3937]
+/lib/x86_64-linux-gnu/libc.so.6(+0x4cb50) [0x7f1e1edfab50]
+
+[2021-02-27 11:40:58]	17081	th 0	4	[ERROR]	[system]	[/lzc/backup/FL/src/FL/coroutine.cpp:194:MainFunc]	Coroutine Except: basic_string::append coroutine_id=4
+/lzc/backup/FL/tests/libFL.so(_ZN2FL9Coroutine8MainFuncEv+0xa95) [0x7fbea468e957]
+/lib/x86_64-linux-gnu/libc.so.6(+0x4cb50) [0x7fbea3ed5b50]
+
+[2021-02-27 11:41:51]	17466	th 0	4	[ERROR]	[system]	[/lzc/backup/FL/src/FL/coroutine.cpp:194:MainFunc]	Coroutine Except: basic_string::append coroutine_id=4
+/lzc/backup/FL/tests/libFL.so(_ZN2FL9Coroutine8MainFuncEv+0xa95) [0x7f970f052957]
+/lib/x86_64-linux-gnu/libc.so.6(+0x4cb50) [0x7f970e899b50]
+
+[2021-02-27 11:42:41]	17826	th	4	[ERROR]	[system]	[/lzc/backup/FL/src/FL/coroutine.cpp:194:MainFunc]	Coroutine Except: basic_string::append coroutine_id=4
+/lzc/backup/FL/tests/libFL.so(_ZN2FL9Coroutine8MainFuncEv+0xa95) [0x7f8a95226957]
+/lib/x86_64-linux-gnu/libc.so.6(+0x4cb50) [0x7f8a94a6db50]
+
+[2021-02-27 11:43:16]	18171	th 0	4	[ERROR]	[system]	[/lzc/backup/FL/src/FL/coroutine.cpp:194:MainFunc]	Coroutine Except: basic_string::append coroutine_id=4
+/lzc/backup/FL/tests/libFL.so(_ZN2FL9Coroutine8MainFuncEv+0xa95) [0x7fd0379fe957]
+/lib/x86_64-linux-gnu/libc.so.6(+0x4cb50) [0x7fd037245b50]
+
+[2021-02-27 11:47:55]	19458	th 0	4	[ERROR]	[system]	[/lzc/backup/FL/src/FL/address.cpp:96:Lookup]	Address::Lookup getaddress(, 0, 0) error = -2 error info [Invalid argument]
+[2021-02-27 11:48:32]	19643	th 0	4	[ERROR]	[system]	[/lzc/backup/FL/src/FL/address.cpp:96:Lookup]	Address::Lookup getaddress(, 0, 0) error = -2 error info [Invalid argument]
